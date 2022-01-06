@@ -1,0 +1,48 @@
+.app_store {
+    height: 40px;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+}
+
+.carousel {
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.carousel-caption {
+  padding: 4%;
+}
+.carousel-caption {
+    position: relative;
+    padding-top: 10%;
+    left: auto;
+    right: auto;
+}
+.carousel-control-prev  {
+    transform: scale(2)
+}
+.carousel-control-next {
+    transform: scale(2)
+}
+
+.accent-class {
+    /* xt-color: #2196f3; */
+}
+
+.colored-bg{
+  background-color: #2196f3;
+}
+
+.btn-primary {
+  background-color: #2196f3;
+
+}
+
+div.limiter {
+  margin: auto;
+  max-width: 50px; /* or 950px */
+}
