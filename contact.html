@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Schmidt Scoreboard product page">
   <meta name="author" content="Mark Schmidt">
+  <meta name="theme-color" content="#8800d1">
   <!-- <link rel="icon" href="../../../../favicon.ico"> -->
 
-  <title>Order</title>
+  <title>Contact</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -33,23 +34,32 @@
 
   <script>
     $(function () {
-      $("#nav-placeholder").load("nav.html");
+      $("#nav-placeholder").load("nav.html", function () {
+        $("#myNav").css("background-color", "#8800d1");
+      });
     });
   </script>
-  <div style="max-width: 950px; margin: auto">
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-6 font-weight-normal">Order</h1>
+
+
+  <div style="max-width: 950px; margin: auto"> 
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+      <div class="p-5 mx-auto mt-5">
+        <h2 class="display-6 font-weight-normal">Contact</h2>
+      </div>
     </div>
-  </div>
-  <div class="px-5" id="Paragraphs">
-      <p class="display-10 font-weight-normal mb-5">Schmidt Scoreboard is available now for $250. If you're interested, email me at <a href = "mailto: mark.schmidt@hey.com">mark.schmidt@hey.com</a>! Scoreboards make great gifts, but note that part acquisition and assembly takes several weeks. If you can't wait, or want to do it yourself, I have a guide <a href="diy.html" >here</a> on setting up your own Scoreboard.
- 
-      </p>
-
-  </div>
-  </div>
-
+    <div class="px-5" id="Paragraphs">
+        <p class="text-center font-weight-normal mb-5">I usually respond pretty quickly to emails at <a href = "mailto: mark.schmidt@hey.com">mark.schmidt@hey.com</a> </p>
+        <p class="text-center font-weight-normal mb-5">If you need another copy of the Scoreboard Manual, download it
+          here:</p>
+        <p class="text-center font-weight-normal mb-5"><a href="Scoreboard Manual.pdf">Download File</a></p>
+    </div>
+  </div>  
+  <div id="footer-placeholder"></div>
+  <script>
+    $(function () {
+      $("#footer-placeholder").load("footer.html");
+    });
+  </script>
 
 
 </body>

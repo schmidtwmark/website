@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Mark Schmidt">
+  <meta name="description" content="Fidgets product page">
   <meta name="author" content="Mark Schmidt">
-  <meta name="theme-color" content="#707936">
+  <meta name="theme-color" content="#8800d1">
   <!-- <link rel="icon" href="../../../../favicon.ico"> -->
 
-  <title>Mark Schmidt</title>
+  <title>Fidgets</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -33,7 +33,7 @@
   <script>
     $(function () {
       $("#nav-placeholder").load("nav.html", function () {
-        $("#myNav").css("background-color", "#707936");
+        $("#myNav").css("background-color", "#8800d1");
       });
     });
   </script>
@@ -41,26 +41,40 @@
   <div style="max-width: 950px; margin: auto">
     <div class="text-center">
       <div class="p-5 mx-auto mt-5">
-        <img style="border-radius: 2%; max-width: 400px" src="assets/IMG_0717.jpeg"></img>
-        <p>Me and my dog, Luna</p>
+        <img width="150px" style="border-radius: 10%"  src="assets/fidgetIcon.png"></img>
+        <h2>Fidgets</h2>
+        <a href="https://apps.apple.com/us/app/fidgets/id1586822352"><img class="app_store"
+            src="assets/app_store.svg" alt="Get it on the App Store"></img></a>
       </div>
+
       <div class="  text-center  overflow-hidden">
         <div class="my-3 p-3">
-          <p class="lead">I'm Mark Schmidt, a software engineer based in Quincy, Illinois. I write code for <a href="https://ocient.com">Ocient</a>, a startup building the highest performance time series database for very large datasets. <a href="https://www.ocient.com/careers">We're hiring</a>, if you're interested.</p>
-          <p class="lead">Here's some other things I've worked on:</p>
-          <ul class="lead text-left list-table">
-            <li><a href="scoreboard.html">Schmidt Scoreboard</a>, an LED display that shows live sports scores. It's configurable through an app available for iPhone and Android.</li>
-            <li><a href="fidgets.html">Fidgets</a>, an Apple Watch app with 6 interactive screens that give unique haptic feedback.</li>
-          </ul>
+          <h2 class="accent-class">Fidget Cube for Apple Watch</h2>
+          <p class="lead">Use the tactile Fidget screens to relax and distract yourself. There are 6 unique screens: </p>
+          <ol class="lead text-left list-table">
+            <li>Spin the digital crown and feel the rotation</li>
+            <li>Tilt your wrist to bounce a ball and collect goals</li>
+            <li>Fiddle with a virtual joystick</li>
+            <li>Toggle a switch</li>
+            <li>Press a haptic button</li>
+            <li>Breathe with the square breathing trainer to quiet your mind</li>
+          </ol>
+          <p class="lead">Fidgets is built with SwiftUI and is fully open source--check out the source <a href="https://github.com/schmidtwmark/Fidget/tree/main">here</a> </p>
+          <img class="responsive p-10" src="assets/IMG_0557.jpeg"></img>
         </div>
       </div>
     </div>
   </div>
+
   <div id="footer-placeholder"></div>
   <script>
     $(function () {
       $("#footer-placeholder").load("footer.html");
     });
   </script>
+
+
+
+</body>
 
 </html>

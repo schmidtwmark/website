@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Schmidt Scoreboard product page">
+  <meta name="description" content="Mark Schmidt Blog">
   <meta name="author" content="Mark Schmidt">
+  <meta name="theme-color" content="#8800d1">
   <!-- <link rel="icon" href="../../../../favicon.ico"> -->
 
   <title>Blog</title>
@@ -35,14 +36,16 @@
 
   <script>
     $(function () {
-      $("#nav-placeholder").load("nav.html");
+      $("#nav-placeholder").load("nav.html", function () {
+        $("#myNav").css("background-color", "#8800d1");
+      });
     });
   </script>
 
-  <div style="max-width: 950px; margin: auto">
+ <div style="max-width: 950px; margin: auto"> 
   <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-6 font-weight-normal">Blog</h1>
+    <div class="p-5 mx-auto mt-5">
+      <h2 class="display-6 font-weight-normal">Blog</h2>
     </div>
   </div>
 
