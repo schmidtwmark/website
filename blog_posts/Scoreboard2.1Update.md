@@ -15,7 +15,8 @@ Please let me know how this new mode works, and if you’d like to see any chang
 
 ## Flappy Bird
 
-![](assets/IMG_0726.mov)
+<link href="index.css" rel="stylesheet">
+<video class="responsive" controls><source src="assets/IMG_0726.mov">Your browser does not support video :(</video>
 
 For fun and to prove that I could, I threw in a Flappy Bird knockoff. It’s super simple—tap the Play button in the Other section to open the Flappy screen, then keep tapping the Play button to start the game and make the character bounce.
 

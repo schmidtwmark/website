@@ -46,3 +46,8 @@ div.limiter {
   margin: auto;
   max-width: 50px; /* or 950px */
 }
+
+.myhr {
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
