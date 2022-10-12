@@ -6,7 +6,7 @@ For your Final Project, you will be extending the Messages app into a *Personal 
 2. View message inbox (`inbox`)
 3. View conversation with another user (`messages`)
 4. A feature of your choice from the list below
-5. A second feature from the list below OR a custom feature of your choice (pending my approval)
+5. A second feature from the list below **OR** a custom feature of your choice (pending my approval)
 
 Conversation and collaboration is encouraged, but you MUST work alone. 
 
