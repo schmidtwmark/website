@@ -17,7 +17,7 @@ I've implemented basic forms of each feature. It is up to you to integrate it in
 Each feature links to some sample code you can use as a starting point. 
 
 - [Weather](../assets/final_project/weather.png)
-    - Display the weather for any given zip code from [openweathermap.org](openweathermap.org)
+    - Display the weather for any given zip code from [openweathermap.org](https://openweathermap.org)
 - [Sports](../assets/final_project/sports.png)
     - Show live sports scores from [https://livescoresapi.mrschmidt.repl.co/](https://livescoresapi.mrschmidt.repl.co/)
 - [Stocks](../assets/final_project/stocks.png)
