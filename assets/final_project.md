@@ -17,6 +17,9 @@ I've implemented basic forms of each feature. It is up to you to integrate it in
 Each feature links to some sample code you can use as a starting point. 
 - [Messages](../assets/messages-day11.png)
     - You should prioritize finishing up Messages
+    - Day 1 [sample code](../assets/messages-day9.png)
+    - Day 2 [sample code](../assets/messages-day10.png)
+    - Day 3 [sample code](../assets/messages-day11.png)
 - [Weather](../assets/final_project/weather.png)
     - Display the weather for any given zip code from [openweathermap.org](https://openweathermap.org)
 - [Sports](../assets/final_project/sports.png)
