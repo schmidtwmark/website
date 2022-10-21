@@ -42,18 +42,7 @@ Each feature links to some sample code you can use as a starting point.
           elif condition_code < 400:
               # Drizzle
               emoji = "🌧"
-          elif condition_code < 600:
-              # Rain  
-              emoji = "☔️"
-          elif condition_code < 700:
-              # Snow
-              emoji = "☃️"
-          elif condition_code < 800:
-              # Fog / Atmospheric
-              emoji = "🌫"
-          elif condition_code == 800:
-              # Clear
-              emoji = "☀️"
+          # TODO fill in elif for other condition ranges
           elif condition_code <= 804:
               # Clouds
               emoji = "☁️"
