@@ -82,18 +82,9 @@ Each feature links to some sample code you can use as a starting point.
 - [Art Gallery](../assets/final_project/art-gallery.png)
     - Select a random piece of ASCII art from the art gallery
     - Display it in the provided color, or a color of your choosing
-- Wordle 
+- [Wordle](../assets/wordle.png)
     - Play the Wordle game you already created
-    - Add a guess counter
-        - ```python
-          guesses = 0
-          running = True
-          while running and guesses < 6:
-              guesses += 1
-              ...
-          if guesses == 6:
-              print("You lose!")
-          ```
+    - Get valid five letter words [here](../assets/five_letter_words.txt)
 
 ## Custom Features
 
