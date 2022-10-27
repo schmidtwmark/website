@@ -33,7 +33,7 @@ Each feature links to some sample code you can use as a starting point.
 - [Spotify Top Songs](../assets/final_project/spotify.png)
     - See the top songs of the day using spotipy
     - You'll need to log in to developer.spotify.com, create a new app, and copy the client ID and client secret into your REPL
-- [Wordle](../assets/wordle.png)
+- [Wordle](../assets/final_project/wordle.png)
     - Play the Wordle game you already created
     - Get valid five letter words [here](../assets/five_letter_words.txt)
 
