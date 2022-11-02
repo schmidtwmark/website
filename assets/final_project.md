@@ -60,12 +60,13 @@ Each feature links to some sample code you can use as a starting point.
     - Show live sports scores from [https://livescoresapi.mrschmidt.repl.co/](https://livescoresapi.mrschmidt.repl.co/)
     - Highlight your favorite team
         - ```python
-          favorite_teams = ["Blackhawks", "Cubs", "Cardinals", "Blues"]
-
-          ...
-
-          if home_team in favorite_teams:
-            home_team = termcolor.colored(home_team, "yellow")
+            favorite_teams = ["Blackhawks", "Cubs", "Cardinals", "Blues"]
+            ...
+            
+            if home_team in favorite_teams:
+                print(termcolor.colored(f"{home_team}: {home_score}", "yellow"))
+            else:
+                print(f"{home_team}: {home_score}")
           ``` 
 - [Stocks](../assets/final_project/stocks.png)
     - Fetch stock prices using `yfinance`
@@ -85,6 +86,17 @@ Each feature links to some sample code you can use as a starting point.
 - [Spotify Top Songs](../assets/final_project/spotify.png)
     - See the top songs of the day using spotipy
     - You'll need to log in to developer.spotify.com, create a new app, and copy the client ID and client secret into your REPL
+    - Highlight your favorite artists
+        - ```python
+          favorite_artists = ["Taylor Swift", "Olivia Rodrigo"]
+
+          ...
+
+          if artist in favorite_artists:
+            print(termcolor.colored(f"   {song_title} - {artist} - {album}", "yellow"))
+          else:
+            print(f"   {song_title} - {artist} - {album}")
+          ``` 
 - [Art Gallery](../assets/final_project/art-gallery.png)
     - Select a random piece of ASCII art from the art gallery
     - Display it in the provided color, or a color of your choosing
