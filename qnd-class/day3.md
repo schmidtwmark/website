@@ -5,5 +5,3 @@
 Today, we'll make our programs more interactive by using `if`` statements.
 
 You can find today's presentation [here](../presentation-pdfs/day3.pdf).
-
-See my example project [here](https://replit.com/@mrschmidt/Adventure#main.swift).
