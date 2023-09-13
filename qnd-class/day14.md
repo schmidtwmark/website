@@ -4,4 +4,4 @@
 
 Today, we'll finish our Wordle project with some minor improvements. See [here](../presentation-pdfs/day14.pdf) for today's slides, which contains code samples for each improvement.
 
-If you need it, use [this](https://replit.com/@mrschmidt/Wordle-Day-2-Complete) as a starting point for today
+If you need it, use [this](https://replit.com/@mrschmidt/Wordle-Day-2-Complete) as a starting point for today.
