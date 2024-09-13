@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QND CS</title>
+    <link rel="stylesheet" href="prism.css">
+</head>
+
+<body>
+    <pre><code class="language-swift">
+import SwiftUI
+
+struct ContentView: View {
+    
+    @State var pressCount = 0
+    @State var showSheet = false
+    
+    var body: some View {
+        VStack {
+            Text("Red").foregroundStyle(.red)
+            Text("Orange").foregroundStyle(.orange)
+            Text("Yellow").foregroundStyle(.yellow)
+            Text("Green").foregroundStyle(.green)
+            Text("Blue").foregroundStyle(.blue)
+            Text("Purple").foregroundStyle(.purple)
+        }
+        .bold()
+        .font(.largeTitle)
+        
+        
+        HStack {
+            Button {
+                print("Pressed button")
+                pressCount = pressCount + 1
+            } label: {
+                Text("Button")
+            }.buttonStyle(.borderedProminent)
+            Text("Button pressed \(pressCount) times")
+        }
+        
+    }
+}
+
+  </code></pre>
+    <script src="prism.js"></script>
+</body>
+
+</html>
