@@ -11,22 +11,26 @@
 import SwiftUI
 
 struct ContentView: View {
-
     @State var answer = ""
 
     var body: some View {
         VStack {
             TextField("Who is the greatest basketball player of all time?", text: $answer)
+            .textFieldStyle(.roundedBorder)
+            .padding(20)
             if answer == "Michael Jordan" {
                 Text("Absolutely! Who else could beat the Monstars? 🐐🐐🐐")
             } else if answer == "Lebron James" {
                 Text("Talented and iconic, but not the GOAT")
+            } else if answer = "Steph Curry" {
+                Text("3 pointers are cringe, not real basketball")
             } else {
                 Text("who is that lol")
             }
         }.font(.title)
     }
 }
+
   </code></pre>
     <script src="prism.js"></script>
 </body>
