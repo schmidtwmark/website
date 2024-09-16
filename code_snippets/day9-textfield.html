@@ -12,22 +12,21 @@ import SwiftUI
 
 struct ContentView: View {
 
-@State var answer = ""
+    @State var answer = ""
 
-var body: some View {
-VStack {
-TextField("Who is the greatest basketball player of all time?", text: $answer)
-if answer == "Michael Jordan" {
-Text("Absolutely! Who else could beat the Monstars? 🐐🐐🐐")
-} else if answer == "Lebron James" {
-Text("Talented and iconic, but not the GOAT")
-} else {
-Text("who is that lol")
+    var body: some View {
+        VStack {
+            TextField("Who is the greatest basketball player of all time?", text: $answer)
+            if answer == "Michael Jordan" {
+                Text("Absolutely! Who else could beat the Monstars? 🐐🐐🐐")
+            } else if answer == "Lebron James" {
+                Text("Talented and iconic, but not the GOAT")
+            } else {
+                Text("who is that lol")
+            }
+        }.font(.title)
+    }
 }
-}.font(.title)
-}
-}
-
   </code></pre>
     <script src="prism.js"></script>
 </body>

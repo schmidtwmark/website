@@ -15,16 +15,16 @@ struct ContentView: View {
 @State var likes = 0
 
 var body: some View {
-VStack {
-Button {
-print("Pressed button")
-likes = likes + 1
-} label: {
-Label("Like", systemImage: "heart")
-}.buttonStyle(.borderedProminent)
-Text("\(likes) likes")
-}
-}
+    VStack {
+        Button {
+            print("Pressed button")
+            likes = likes + 1
+        } label: {
+            Label("Like", systemImage: "heart")
+        }.buttonStyle(.borderedProminent)
+            Text("\(likes) likes")
+        }
+    }
 }
 
   </code></pre>
