@@ -12,9 +12,6 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var pressCount = 0
-    @State var showSheet = false
-    
     var body: some View {
         VStack {
             Text("Red").foregroundStyle(.red)
@@ -26,18 +23,6 @@ struct ContentView: View {
         }
         .bold()
         .font(.largeTitle)
-        
-        
-        HStack {
-            Button {
-                print("Pressed button")
-                pressCount = pressCount + 1
-            } label: {
-                Text("Button")
-            }.buttonStyle(.borderedProminent)
-            Text("Button pressed \(pressCount) times")
-        }
-        
     }
 }
 

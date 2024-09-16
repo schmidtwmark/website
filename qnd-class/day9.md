@@ -2,10 +2,9 @@
 
 <link href="index.css" rel="stylesheet">
 
-We're continuing work on our calculator today!
+We're continuing our SwiftUI journey! Today, we'll cover ways to receive input from the user!
+
+[Buttons](../code_snippets/day9-buttons.html)
+[TextField](../code_snippets/day8-intro-app.html)
 
 You can find the slide deck for today [here](../presentation-pdfs/day9.pdf).
-
-If you need it, use [this link](https://replit.com/@mrschmidt/calculator) as a starting point. Just click **Fork** to make your own copy.
-
-Our final calculator should look like [this](https://replit.com/@mrschmidt/calculator-final#main.swift).
