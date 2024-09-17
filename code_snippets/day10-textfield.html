@@ -11,15 +11,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @State var answer = ""
 
     var body: some View {
         VStack {
             TextField("Who is the greatest basketball player of all time?", text: $answer)
-            .textFieldStyle(.roundedBorder)
-            .padding(20)
+                .textFieldStyle(.roundedBorder)
+                .padding(20)
             if answer == "Michael Jordan" {
                 Text("Absolutely! Who else could beat the Monstars? 🐐🐐🐐")
+                Image("Space")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 500)
             } else if answer == "Lebron James" {
                 Text("Talented and iconic, but not the GOAT")
             } else if answer == "Steph Curry" {
