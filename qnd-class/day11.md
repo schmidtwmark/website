@@ -8,5 +8,7 @@ See the slides [here](../presentation-pdfs/day11.pdf).
 
 Here's sample code:
 
-[Simple version](../code_snippets/day11-guesss-my-number-1.html)
-[Complex version](../code_snippets/day11-guesss-my-number-2.html)
+[First Checkpoint](../code_snippets/day11-guess-my-number-1.html)
+
+
+[Second Checkpoint](../code_snippets/day11-guess-my-number-2.html)
