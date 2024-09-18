@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QND CS</title>
+    <link rel="stylesheet" href="prism.css">
+</head>
+
+<body>
+    <pre><code class="language-swift">
+import SwiftUI
+
+struct ContentView: View {
+    
+    @State var answer = ""
+    @State var guess = -1
+    @State var guessCount = 0
+    @State var secret = Int.random(in: 1...100)
+
+    var body: some View {
+        VStack {
+            HStack {
+                TextField("Guess a number between 1 and 100", text: $answer)
+                    .textFieldStyle(.roundedBorder)
+                Button {
+                    // Convert to int, or -1 if fails
+                    guess = Int(answer) ?? -1
+                    guessCount += 1
+                } label: {
+                    Text("Guess")
+                }.buttonStyle(.borderedProminent)
+            }
+            
+            Text("\(guessCount) guesses")
+            
+            // Make sure guess is valid
+            if guess >= 1 && guess <= 100 {
+                // Tell the user if they are too high or too low
+                if guess < secret {
+                    Text("Too low!").foregroundStyle(.red)
+                } else if guess > secret {
+                    Text("Too high").foregroundStyle(.red)
+                } else {
+                    Text("You got it!").foregroundStyle(.green)
+                    Button {
+                        // Reset all state
+                        answer = ""
+                        guess = -1
+                        guessCount = 0
+                        secret = Int.random(in: 1...100)
+                    } label: {
+                        Label("Play Again?", systemImage: "arrow.clockwise")
+                    }
+                }
+            }
+        }
+        .padding()
+        .font(.title)
+    }
+}
+  </code></pre>
+    <script src="prism.js"></script>
+</body>
+
+</html>
