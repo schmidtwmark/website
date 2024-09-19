@@ -4,7 +4,7 @@
 
 Today, we'll continue the GuessMyNumber game
 
-See slides [here](../presentation-pdfs/day12.pdf). We'll talk about arrays, for loops, and indexing
+See slides [here](../presentation-pdfs/day12.pdf).
 
 Here's sample code:
 
