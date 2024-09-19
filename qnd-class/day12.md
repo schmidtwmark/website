@@ -2,6 +2,13 @@
 
 <link href="index.css" rel="stylesheet">
 
-Today, we'll start on our Wordle game. See slides [here](../presentation-pdfs/day12.pdf). We'll talk about arrays, for loops, and indexing
+Today, we'll continue the GuessMyNumber game
 
-To make our actual wordle game, we'll need to use [this template](https://replit.com/@mrschmidt/Wordle#main.swift)
+See slides [here](../presentation-pdfs/day12.pdf). We'll talk about arrays, for loops, and indexing
+
+Here's sample code:
+
+[First Checkpoint](../code_snippets/day11-guess-my-number-1.html)
+
+
+[Second Checkpoint](../code_snippets/day11-guess-my-number-2.html)
