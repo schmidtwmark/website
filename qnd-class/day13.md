@@ -2,6 +2,13 @@
 
 <link href="index.css" rel="stylesheet">
 
-Today, we'll continue Wordle. We'll grade the user's guess and work on some additional improvements. See the slides [here](../presentation-pdfs/day13.pdf).
+Today, we'll finish the Guess My Number game. See the slides [here](../presentation-pdfs/day13.pdf).
 
-If you need it, use [this](https://replit.com/@mrschmidt/Wordle-Swift-Day-1#main.swift) as a starting point for today
+Here's sample code:
+
+[First Checkpoint](../code_snippets/day11-guess-my-number-1.html)
+
+
+[Second Checkpoint](../code_snippets/day11-guess-my-number-2.html)
+
+[Secret Third Checkpoint](../code_snippets/day11-guess-my-number-3.html)

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QND CS</title>
+    <link rel="stylesheet" href="prism.css">
+</head>
+
+<body>
+    <pre><code class="language-swift">
+import SwiftUI
+
+struct ContentView: View {
+    
+    @State var answer = ""
+    @State var guess = -1
+    @State var guessCount = 0
+    
+    // Create a state variable for range
+    @State var range = 1...100
+    @State var secret = Int.random(in: 1...100)
+
+    var body: some View {
+        VStack {
+            // Add a title at the top of the screen
+            Text("QND Guess My Number Game").font(.system(size: 50))
+            Spacer() // Use Spacer() to center things
+            HStack {
+                // Use upper bound for hint
+                TextField("Guess a number between 1 and \(range.upperBound)", text: $answer)
+                    .textFieldStyle(.roundedBorder)
+                Button {
+                    // Convert to int, or -1 if fails
+                    guess = Int(answer) ?? -1
+                    guessCount += 1
+                } label: {
+                    Text("Guess")
+                }.buttonStyle(.borderedProminent)
+            }
+            
+            // Put guess count + grade in an HStack
+            HStack {
+                // Use 
+                if guessCount == 1 {
+                    Text("1 guess")
+                } else {
+                    Text("\(guessCount) guesses")
+                }
+                Spacer()
+                // Make sure guess is valid, using range
+                if guess >= 1 && guess <= range.upperBound {
+                    // Tell the user if they are too high or too low
+                    if guess < secret {
+                        Text("Too low!").foregroundStyle(.purple)
+                    } else if guess > secret {
+                        Text("Too high").foregroundStyle(.blue)
+                    } else {
+                        Text("You got it!").foregroundStyle(.green)
+                        Button {
+                            // Reset all state
+                            answer = ""
+                            guess = -1
+                            guessCount = 0
+                            secret = Int.random(in: range) // Reset to range variable
+                        } label: {
+                            Label("Play Again?", systemImage: "arrow.clockwise")
+                        }
+                    }
+                } else if guessCount > 0 { // Add a warning about invalid guesses
+                    Text("Invalid guess!").foregroundStyle(.red)
+                }
+            }
+            
+            Spacer()
+            // Add easy, medium, hard modes
+            HStack {
+                Button {
+                    answer = ""
+                    guess = -1
+                    guessCount = 0
+                    range = 1...100
+                    secret = Int.random(in: range)
+                } label: {
+                    Text("Easy")
+                }
+                Button {
+                    answer = ""
+                    guess = -1
+                    guessCount = 0
+                    range = 1...500
+                    secret = Int.random(in: range)
+                } label: {
+                    Text("Medium")
+                }
+                Button {
+                    answer = ""
+                    guess = -1
+                    guessCount = 0
+                    range = 1...1000
+                    secret = Int.random(in: range)
+                } label: {
+                    Text("Hard")
+                }
+                
+            }
+        }
+        .padding(30)
+        .font(.title)
+    }
+}
+
+  </code></pre>
+    <script src="prism.js"></script>
+</body>
+
+</html>
