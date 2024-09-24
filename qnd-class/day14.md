@@ -2,6 +2,8 @@
 
 <link href="index.css" rel="stylesheet">
 
-Today, we'll finish our Wordle project with some minor improvements. See [here](../presentation-pdfs/day14.pdf) for today's slides, which contains code samples for each improvement.
+Today, we'll learn about how Arrays and ForEach can help us deal with repeated data
 
-If you need it, use [this](https://replit.com/@mrschmidt/Wordle-Day-2-Complete) as a starting point for today.
+See slides at [here](../presentation-pdfs/day14.pdf).
+
+Sample code is [here](../code_snippets/day14-arrays.html)
