@@ -6,8 +6,6 @@ Today, we start our Wordle project!
 
 Get the slides [here](../presentation-pdfs/day15.pdf)
 
-## Code 
-
 Download the starter code [here](../code_snippets/Wordle.zip)
 
 [First checkpoint](../code_snippets/day15-wordle-checkpoint-1.html)
