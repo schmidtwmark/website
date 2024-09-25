@@ -11,38 +11,45 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @State var text = ""
-    @State var items: [String] = []
+    @State var guess = ""
+    @State var guesses: [GradedWord] = []
+    @State var secret = "apple"
     
     var body: some View {
-        VStack  {
-                Text("Top 5 Video Games").font(.system(size: 50))                
+        VStack {
+            Text("QND Wordle")
+                .bold()
+                .font(.title)
+            ForEach(guesses) { guess in
                 HStack {
-                    TextField("Enter the #\(items.count + 1) video game", text: $text)
-                        .textFieldStyle(.roundedBorder)
-                    Button {
-                        items.append(text)
-                    } label: {
-                        Text("Submit")
-                    }.disabled(items.count == 5)
+                    ForEach(guess.letters) { guessLetter in
+                        Text(guessLetter.letter.description)
+                            .font(.largeTitle)
+                            .padding(10)
+                            .frame(width: 60, height: 60)
+                            .background(guessLetter.color)
+                    }
                 }
-                ForEach(items, id: \.self) { item in 
-                    Text(item)
-                        .font(.system(size: 50))
-                        .padding()
-                        .background(.blue)
-                        .clipShape(RoundedRectangle(cornerRadius: 10.0))
-                    
-                }
+            }
+            
             Spacer()
-                
+            
+            
+            HStack {
+                TextField("Guess a 5 letter word", text: $guess)
+                    .textFieldStyle(.roundedBorder)
+                Button {
+                    let graded = gradeWord(guess.uppercased(), secret: secret.uppercased())
+                    guesses.append(graded)
+                } label: {
+                    Text("Submit")
+                }
+                .buttonStyle(.borderedProminent)
+            }
         }
-        .padding(20)
-        .font(.title)
+        .padding()
     }
 }
-
   </code></pre>
     <script src="prism.js"></script>
 </body>
