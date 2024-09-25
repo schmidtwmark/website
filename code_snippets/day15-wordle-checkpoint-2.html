@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QND CS</title>
+    <link rel="stylesheet" href="prism.css">
+</head>
+
+<body>
+    <pre><code class="language-swift">
+import SwiftUI
+
+
+// Load valid words from file
+let validWords = loadWords(filename: "five_letter_words")
+// Have a list of secret words (different from valid words)
+let secretWords = ["apple", "piles", "rates", "doggy", "frogs"]
+
+struct ContentView: View {
+    @State var guess = ""
+    @State var guesses: [GradedWord] = []
+    // Select a random secret word
+    @State var secret = secretWords.randomElement()!
+    
+    @State var won = false
+    @State var lost = false
+    
+    
+    var body: some View {
+        VStack {
+            Text("QND Wordle")
+                .bold()
+                .font(.title)
+            ForEach(guesses) { guess in
+                HStack {
+                    ForEach(guess.letters) { guessLetter in
+                        Text(guessLetter.letter.description)
+                            .font(.largeTitle)
+                            .padding(10)
+                            .frame(width: 60, height: 60)
+                            .background(guessLetter.color)
+                    }
+                }
+            }
+            
+            Spacer()
+            
+            // Show restart buttons
+            if won {
+                Text("You got it!")
+            }
+            if lost {
+                Text("You failed, the word was \(secret)")
+            }
+            if won || lost {
+                Button {
+                    guess = ""
+                    guesses = []
+                    secret = secretWords.randomElement()!
+                    won = false
+                    lost = false
+                } label: {
+                    Label("Play Again", systemImage: "arrow.clockwise")
+                }.buttonStyle(.borderedProminent)
+            }
+            
+            Spacer()
+            
+            HStack {
+                TextField("Guess a 5 letter word", text: $guess)
+                    .textFieldStyle(.roundedBorder)
+                Button {
+                    
+                    let graded = gradeWord(guess.uppercased(), secret: secret.uppercased())
+                    // Animate adding the guess
+                    withAnimation {
+                        guesses.append(graded)
+                        // Handle game ending
+                        if guess.uppercased() == secret.uppercased() {
+                            won = true
+                        } else if guesses.count == 6 {
+                            lost = true
+                        }
+                    }
+                } label: {
+                    Text("Submit")
+                }
+                .disabled(
+                    // Disable the button if the guess is not the right length, it is not a valid english word, or the game is over
+                    guess.count != secret.count ||
+                    !validWords.contains(guess.lowercased()) ||
+                    won ||
+                    lost)
+                .buttonStyle(.borderedProminent)
+            }
+        }
+        .padding()
+    }
+}
+
+  </code></pre>
+    <script src="prism.js"></script>
+</body>
+
+</html>

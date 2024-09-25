@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QND CS</title>
+    <link rel="stylesheet" href="prism.css">
+</head>
+
+<body>
+    <pre><code class="language-swift">
+import SwiftUI
+
+struct ContentView: View {
+    
+    @State var text = ""
+    @State var items: [String] = []
+    
+    var body: some View {
+        VStack  {
+                Text("Top 5 Video Games").font(.system(size: 50))                
+                HStack {
+                    TextField("Enter the #\(items.count + 1) video game", text: $text)
+                        .textFieldStyle(.roundedBorder)
+                    Button {
+                        items.append(text)
+                    } label: {
+                        Text("Submit")
+                    }.disabled(items.count == 5)
+                }
+                ForEach(items, id: \.self) { item in 
+                    Text(item)
+                        .font(.system(size: 50))
+                        .padding()
+                        .background(.blue)
+                        .clipShape(RoundedRectangle(cornerRadius: 10.0))
+                    
+                }
+            Spacer()
+                
+        }
+        .padding(20)
+        .font(.title)
+    }
+}
+
+  </code></pre>
+    <script src="prism.js"></script>
+</body>
+
+</html>
