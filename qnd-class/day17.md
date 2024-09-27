@@ -4,7 +4,7 @@
 
 Today is the last day!
 
-We'll continue exploring iOS development with Swift Playgrounds, and also enjoy some cookies!
+We'll finish up our Wordle game
 
 Get the slides [here](../presentation-pdfs/day17.pdf)
 
