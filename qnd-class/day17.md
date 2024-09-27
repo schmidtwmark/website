@@ -2,7 +2,7 @@
 
 <link href="index.css" rel="stylesheet">
 
-Today is the last day!
+Today is the last day of Computer Science!
 
 We'll finish up our Wordle game
 
