@@ -6,4 +6,4 @@ Today, we're writing our first actual programs!
 
 You can find today's presentation at [day1.pdf](../presentation-pdfs/day1.pdf).
 
-We'll be using [replit.com](https://replit.com) to run our code.
+You'll need [this template](../assets/Text%20Playground.zip) to write code today
