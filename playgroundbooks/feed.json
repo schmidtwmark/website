@@ -13,11 +13,11 @@
             "description": "A simple code editor with a display console that supports reading input from the user and writing output",
             "contentIdentifier": "io.markschmidt.playgroundbooks.text",
             "contentVersion": "1.0",
-            "url": "https:\/\/markschmidt.io\/playgroundbooks\/text\/SwiftCodingEnvironment.playgroundbook.zip",
+            "url": "text\/SwiftCodingEnvironment.playgroundbook.zip",
             "publishedDate": "2025-01-15T21:13:57+00:00",
             "lastUpdatedDate": "2025-01-15T21:13:57+00:00",
-            "bannerImageURL": "https:\/\/markschmidt.io\/playgroundbooks\/text\/banner.png",
-            "thumbnailURL": "https:\/\/markschmidt.io\/playgroundbooks\/text\/thumbnail.png",
+            "bannerImageURL": "text\/banner.png",
+            "thumbnailURL": "text\/thumbnail.png",
             "additionalInformation": [
                 {
                     "name": "Languages",
@@ -25,7 +25,7 @@
                 }
             ],
             "previewImageURLs": [
-                "https:\/\/markschmidt.io\/playgroundbooks\/text\/preview.png"
+                "text\/preview.png"
             ]
         }
     ]
