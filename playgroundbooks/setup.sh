@@ -1,0 +1,2 @@
+zip -r playgroundbooks/text/text.playgroundbook.zip $CONSOLE_BOOK_PATH/SwiftCodingEnvironment.playgroundbook
+zip -r playgroundbooks/turtle/turtle.playgroundbook.zip $CONSOLE_BOOK_PATH/TurtleConsoleBook.playgroundbook

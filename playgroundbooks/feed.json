@@ -8,12 +8,34 @@
     "documents": [
         {
             "title": "Text Console",
-            "overviewSubtitle": "Write programs that Read and Write text",
-            "detailSubtitle": "A simple code editor with display",
-            "description": "A simple code editor with a display console that supports reading input from the user and writing output",
+            "overviewSubtitle": "Read and write text",
+            "detailSubtitle": "Make interactive programs and text-based console games with this Swift sandbox.",
+            "description": "Use the provided `console` object to read and write text.\nUse ColoredString to make colorful output!",
             "contentIdentifier": "io.markschmidt.playgroundbooks.text",
             "contentVersion": "1.0",
-            "url": "text\/swiftcoding.playgroundbook.zip",
+            "url": "text\/text.playgroundbook.zip",
+            "publishedDate": "2025-01-15T21:13:57+00:00",
+            "lastUpdatedDate": "2025-01-16T10:13:57+00:00",
+            "bannerImageURL": "text\/banner.png",
+            "thumbnailURL": "text\/thumbnail.png",
+            "additionalInformation": [
+                {
+                    "name": "Languages",
+                    "value": "English"
+                }
+            ],
+            "previewImageURLs": [
+                "text\/preview.png"
+            ]
+        },
+        {
+            "title": "Turtle Console",
+            "overviewSubtitle": "Make art with code!",
+            "detailSubtitle": "Navigate a robotic turtle, drawing as it moves",
+            "description": "Draw lines, arcs, and fills of any color to make beautiful art!",
+            "contentIdentifier": "io.markschmidt.playgroundbooks.turtle",
+            "contentVersion": "1.0",
+            "url": "turtle\/turtle.playgroundbook.zip",
             "publishedDate": "2025-01-15T21:13:57+00:00",
             "lastUpdatedDate": "2025-01-16T10:13:57+00:00",
             "bannerImageURL": "text\/banner.png",
