@@ -4,7 +4,7 @@
     "publisherName": "Mark Schmidt",
     "feedIdentifier": "io.markschmidt.playgroundbooks",
     "contactURL": "mailto:mark.schmidt@hey.com",
-    "formatVersion": "1.2",
+    "formatVersion": "1.0",
     "documents": [
         {
             "title": "Text Console",
