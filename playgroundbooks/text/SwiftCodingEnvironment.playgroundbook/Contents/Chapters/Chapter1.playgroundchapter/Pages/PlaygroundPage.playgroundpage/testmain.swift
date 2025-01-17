@@ -6,9 +6,7 @@
 //
 let number = Int(console.read("Enter a number"))!
 
-let colors = [.blue, .green, .yellow, .red]
-
 for i in 1 ... number {
-    let colored = ColoredString("Hello ", colors.randomElement()!)
+    let colored = ColoredString("Hello ",  [.blue, .green, .yellow, .red].randomElement()!)
     console.write(colored + "world \(i)\n")
 }
