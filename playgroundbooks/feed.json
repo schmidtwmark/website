@@ -9,7 +9,7 @@
         {
             "title": "Text Console",
             "overviewSubtitle": "Write programs that Read and Write text",
-            "detailSubtitle": "A simple code editor",
+            "detailSubtitle": "A simple code editor with display",
             "description": "A simple code editor with a display console that supports reading input from the user and writing output",
             "contentIdentifier": "io.markschmidt.playgroundbooks.text",
             "contentVersion": "1.0",
