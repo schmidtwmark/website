@@ -13,7 +13,7 @@
             "description": "A simple code editor with a display console that supports reading input from the user and writing output",
             "contentIdentifier": "io.markschmidt.playgroundbooks.text",
             "contentVersion": "1.0",
-            "url": "text\/text.playgroundbook.zip",
+            "url": "text\/swiftcoding.playgroundbook.zip",
             "publishedDate": "2025-01-15T21:13:57+00:00",
             "lastUpdatedDate": "2025-01-15T21:13:57+00:00",
             "bannerImageURL": "text\/banner.png",
