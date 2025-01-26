@@ -16,16 +16,12 @@
             "url": "text\/text.playgroundbook.zip",
             "publishedDate": "2025-01-15T21:13:57+00:00",
             "lastUpdatedDate": "2025-01-16T10:13:57+00:00",
-            "bannerImageURL": "text\/banner.png",
             "thumbnailURL": "text\/thumbnail.png",
             "additionalInformation": [
                 {
                     "name": "Languages",
                     "value": "English"
                 }
-            ],
-            "previewImageURLs": [
-                "text\/preview.png"
             ]
         },
         {
@@ -38,16 +34,12 @@
             "url": "turtle\/turtle.playgroundbook.zip",
             "publishedDate": "2025-01-15T21:13:57+00:00",
             "lastUpdatedDate": "2025-01-16T10:13:57+00:00",
-            "bannerImageURL": "text\/banner.png",
             "thumbnailURL": "text\/thumbnail.png",
             "additionalInformation": [
                 {
                     "name": "Languages",
                     "value": "English"
                 }
-            ],
-            "previewImageURLs": [
-                "text\/preview.png"
             ]
         }
     ]
