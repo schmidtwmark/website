@@ -23,6 +23,9 @@
                     "name": "Languages",
                     "value": "English"
                 }
+            ],
+            "previewImageURLs": [
+                "text\/preview.png"
             ]
         },
         {
@@ -42,6 +45,9 @@
                     "name": "Languages",
                     "value": "English"
                 }
+            ],
+            "previewImageURLs": [
+                "turtle\/preview.png"
             ]
         }
     ]
