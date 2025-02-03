@@ -1,2 +1,5 @@
-zip -r playgroundbooks/text/text.playgroundbook.zip "$CONSOLE_BOOK_PATH/Text Playground.playgroundbook"
-zip -r playgroundbooks/turtle/turtle.playgroundbook.zip "$CONSOLE_BOOK_PATH/Turtle Playground.playgroundbook"
+(cd $CONSOLE_BOOK_PATH && zip -r text.playgroundbook.zip "Text Playground.playgroundbook")
+(cd $CONSOLE_BOOK_PATH && zip -r turtle.playgroundbook.zip "Turtle Playground.playgroundbook")
+
+cp $CONSOLE_BOOK_PATH/text.playgroundbook.zip playgroundbooks/text/text.playgroundbook.zip
+cp $CONSOLE_BOOK_PATH/turtle.playgroundbook.zip playgroundbooks/turtle/turtle.playgroundbook.zip
