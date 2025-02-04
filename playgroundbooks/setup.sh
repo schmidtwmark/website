@@ -5,5 +5,3 @@ cp $CONSOLE_BOOK_PATH/text.playgroundbook.zip playgroundbooks/text/text.zip
 cp $CONSOLE_BOOK_PATH/turtle.playgroundbook.zip playgroundbooks/turtle/turtle.zip
 cp $CONSOLE_BOOK_PATH/text.playgroundbook.zip playgroundbooks/text/text.playgroundbook.zip
 cp $CONSOLE_BOOK_PATH/turtle.playgroundbook.zip playgroundbooks/turtle/turtle.playgroundbook.zip
-cp $CONSOLE_BOOK_PATH/text.playgroundbook.zip playgroundbooks/text/text.playgroundbook
-cp $CONSOLE_BOOK_PATH/turtle.playgroundbook.zip playgroundbooks/turtle/turtle.playgroundbook
