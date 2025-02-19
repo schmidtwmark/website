@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QND CS</title>
+    <link rel="stylesheet" href="prism.css">
+</head>
+
+<body>
+    <pre><code class="language-swift">
+// Begin with an opening choice
+console.write("On your quest to find the lost treasure, you find yourself in a dark cave. Up ahead, there is a fork in the path.")
+console.write("To the left, you can hear metal clanging on rocks and distant voices.")
+console.write("The right path rumbles with the breathing of a large animal.")
+let firstPath = console.read("Choose a path LEFT or RIGHT")
+console.write("")  // Add some spacing to visually separate each player choice
+
+// If the user entered LEFT, describe what happens
+if firstPath == "LEFT" {
+    console.write("Taking the leftmost path, you find a small camp of fellow adventurers.")
+    console.write("They look dishelved and lost. They're trying to dig a way out through the cave walls.")
+    console.write("\"Wow\", the leader says, \"we haven't seen anyone down here in weeks! You wouldn't happen to have any food?\"")
+    console.write("Your own food supplies are running low. How long have you been down here? Days? Weeks?")
+    let foodChoice = console.read("Choose OFFER FOOD or DECLINE")
+    console.write("") // Visually seperate each choice
+
+  // 
+  if foodChoice == "OFFER FOOD" {
+      console.write("\"That\"s so kind of you\", the leader says.")
+      console.write("You share your food with the rest of the camp.")
+      console.write("Maybe that wasn't the wisest choice. Lost in the cave with no more food, you wander aimlessly until...")
+      console.write("GAME OVER")
+  } else if foodChoice == "DECLINE" {
+      console.write("\"Sorry\", you say, \"but I barely have enough for myself as it is.\"") 
+      console.write("\"Too bad\", the leader says, \"I was hoping it wouldn\"t come to this.\"")
+      console.write("Suddenly, the leader lunges at you with a knife.")
+      console.write("GAME OVER")
+  } else {
+      console.write("GAME OVER, not a valid choice")
+  }
+
+// If the user selects RIGHT, describe what happens
+} else if firstPath == "RIGHT" { 
+    console.write("The breathing gets louder and louder. What could it be?")
+    console.write("Your imagination runs wild with the dangers that might be ahead.")
+    console.write("Finally, the cave opens into a large chamber.")
+    console.write("In the middle, atop a pile of gold treasure, a massive green dragon slumbers.")
+    let fightChoice = console.read("Choose STEALTH or ATTACK")
+    console.write("") // Empty console.write to separate choices
+
+  if fightChoice == "STEALTH" {
+      console.write("Moving as quietly as you can, you approach the dragon's hoard.")
+      console.write("There are coins and trinkets, jewelry and finery.")
+      console.write("You're awed by a gorgeous painting in a gilded frame.")
+      console.write("So awed, in fact, that you trip over a polished suit of armor, making an enormous racket.")
+      console.write("\"HEY\", the dragon yells. \"THAT'S MY STUFF\"")
+      console.write("You feel a rush of heat and then everything goes dark")
+      console.write("GAME OVER")
+  } else if fightChoice == "ATTACK" {
+      console.write("You draw your shining sword and call out to the dragon.")
+      console.write("\"Woah\", it says. \"I'm just trying to be chill, you can totally take some of this gold if you want. What would I even want with gold anyway? It's not like dragons can participate in the economy. It's kind of messed up, don't you think?\"")
+      console.write("The dragon is right. It is messed up.")
+      console.write("You befriend the dragon, and leave the cave together, realizing the real treasure was friendship with a massive mythical creature.")
+      console.write("YOU WIN")
+  } else {
+      console.write("GAME OVER, not a valid choice")
+  }
+} else {
+    console.write("GAME OVER, not a valid path")
+}
+
+
+  </code></pre>
+    <script src="prism.js"></script>
+</body>
+
+</html>
