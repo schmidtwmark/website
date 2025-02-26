@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QND CS</title>
+    <link rel="stylesheet" href="prism.css">
+</head>
+
+<body>
+    <pre><code class="language-swift">
+let secret = 50 // shh this is my top secret number
+var guessCount = 0
+// Wrap guessing + grading in a while loop to repeat until the user guesses correctly
+while true {
+    let guess = Int(console.read("Guess a number between 1 and 100"))!
+    
+    // Increment guess count
+    guessCount = guessCount + 1
+    
+    if guess == secret {
+        console.write("You got it! It took \(guessCount) guesses")
+        break // exit when the user guesses correctly
+    } else if guess > secret {
+        console.write("Too high!")
+    } else {
+        console.write("Too low!")
+    }
+}
+
+
+  </code></pre>
+    <script src="prism.js"></script>
+</body>
+
+</html>
