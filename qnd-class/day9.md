@@ -9,6 +9,8 @@ See slides [here](../presentation-pdfs/day9.pdf).
 The Guess My Number game is split into three stages:
 
 [Stage 1](../code_snippets/guess-my-number-stage-1.html)
+
 [Stage 2](../code_snippets/guess-my-number-stage-2.html)
+
 [Stage 3](../code_snippets/guess-my-number-stage-3.html)
 

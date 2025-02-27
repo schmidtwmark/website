@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QND CS</title>
+    <link rel="stylesheet" href="prism.css">
+</head>
+
+<body>
+    <pre><code class="language-swift">
+
+// get an array of characters
+let wordBank = ["hello", "world", "front", "chuck", "quiet"]
+let secret = Array(wordBank.randomElement()!)
+var guessCount = 0
+
+while true {
+    var output = ""
+    let guess = Array(console.read("Guess a word:"))
+    if guess.count != secret.count {
+        console.write("Invalid guess")
+        continue // skip back to the top
+    }
+    
+    guessCount += 1
+    
+    // Check each letter, add to the output string
+    for i in 0..<guess.count {
+        let guessLetter = guess[i]
+        let secretLetter = secret[i]
+        
+        if guessLetter == secretLetter {
+            output += "🟩"
+        } else if secret.contains(guessLetter) {
+            output += "🟨"
+            
+        } else {
+            output += "⬛️"
+        }
+    }
+    console.write(output)
+    
+    if guessCount >= 6 {
+        console.write("Out of guesses, the answer was \(String(secret))")
+    }
+    
+    if guess == secret {
+        console.write("You got it!")
+        break // exit the loop
+    }
+}
+
+</code></pre>
+    <script src="prism.js"></script>
+</body>
+
+</html>

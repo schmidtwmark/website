@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QND CS</title>
+    <link rel="stylesheet" href="prism.css">
+</head>
+
+<body>
+    <pre><code class="language-swift">
+
+// get an array of characters
+let wordBank = ["hello", "world", "front", "chuck", "quiet"]
+
+while true {
+    
+    let secret = Array(wordBank.randomElement()!.lowercased()) // Use lowercased secret word
+    var guessCount = 0
+    
+    while true {
+        var output = ColoredString() // Set up empty colored string
+        // Turn guess into lowercased
+        let guess = Array(console.read("Guess a word:").lowercased())
+        if guess.count != secret.count {
+            console.write("Invalid guess")
+            continue // skip back to the top
+        }
+        
+        guessCount += 1
+        
+        // Check each letter, add to the output string
+        for i in 0..<guess.count {
+            let guessLetter = guess[i]
+            let secretLetter = secret[i]
+            
+            if guessLetter == secretLetter {
+                output += ColoredString(String(guessLetter), .green)
+            } else if secret.contains(guessLetter) {
+                output += ColoredString(String(guessLetter), .yellow)
+                
+            } else {
+                output += ColoredString(String(guessLetter), .gray)
+            }
+        }
+        console.write(output)
+        
+        if guessCount >= 6 {
+            console.write(ColoredString("Out of guesses, the answer was \(String(secret))", .red))
+            break
+        }
+        
+        if guess == secret {
+            console.write(ColoredString("You got it!", .green))
+            break // exit the loop
+        }
+    }
+    
+    let answer = console.read("Play again? Yes / No")
+    if answer != "Yes" {
+        console.write("Thanks for playing!")
+        break
+    }
+    console.write("") // Empty line to separate games
+}
+
+
+</code></pre>
+    <script src="prism.js"></script>
+</body>
+
+</html>
