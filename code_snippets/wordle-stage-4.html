@@ -24,7 +24,7 @@ while true {
     guessCount += 1
     
     // Check each letter, add to the output string
-    for i in 0..<guess.count {
+    for i in 0..&lt;guess.count {
         let guessLetter = guess[i]
         let secretLetter = secret[i]
         
@@ -38,16 +38,18 @@ while true {
         }
     }
     console.write(output)
+
     
-    if guessCount >= 6 {
-        console.write(ColoredString("Out of guesses, the answer was \(String(secret))", .red))
+    if guess == secret {
+        console.write("You got it!")
+        break // exit the loop
+    }
+
+    if guessCount &gt;= 6 {
+        console.write("Out of guesses, the answer was \(String(secret))")
         break
     }
     
-    if guess == secret {
-        console.write(ColoredString("You got it!", .green))
-        break // exit the loop
-    }
 }
 
 </code></pre>

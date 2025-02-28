@@ -44,14 +44,14 @@ while true {
         }
         console.write(output)
         
-        if guessCount &gt;= 6 {
-            console.write(ColoredString("Out of guesses, the answer was \(String(secret))", .red))
-            break
-        }
-        
         if guess == secret {
             console.write(ColoredString("You got it!", .green))
             break // exit the loop
+        }
+        
+        if guessCount &gt;= 6 {
+            console.write(ColoredString("Out of guesses, the answer was \(String(secret))", .red))
+            break
         }
     }
     
