@@ -1,10 +1,10 @@
-# Computer Science Day 10
+# Computer Science Day 11
 
 <link href="index.css" rel="stylesheet">
 
-Today, we'll start our Wordle project.
+Today, we'll continue our Wordle project!
 
-See slides [here](../presentation-pdfs/day10.pdf).
+See slides [here](../presentation-pdfs/day11.pdf).
 
 Wordle is split into **5 stages**:
 
