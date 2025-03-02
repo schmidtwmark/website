@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QND CS</title>
+    <link rel="stylesheet" href="prism.css">
+</head>
+
+<body>
+    <pre><code class="language-swift">
+let turtle = turtleConsole.addTurtle()
+turtle.penDown(fillColor: .green)
+// draw a full circle
+turtle.arc(radius: 200, angle: 360)
+turtle.penUp()
+turtle.rotate(90)
+
+
+turtle.forward(300)
+turtle.rotate(90)
+turtle.forward(100)
+
+turtle.penDown(fillColor: .black)
+turtle.arc(radius:30, angle:360)
+turtle.penUp()
+
+turtle.rotate(180)
+turtle.forward(200)
+
+turtle.penDown(fillColor: .black)
+turtle.arc(radius:30, angle: -360)
+turtle.penUp()
+
+turtle.rotate(-90)
+turtle.forward(100)
+
+turtle.penDown(fillColor: .black)
+turtle.arc(radius: 100, angle: -180)
+
+</code></pre>
+    <script src="prism.js"></script>
+</body>
+
+</html>
