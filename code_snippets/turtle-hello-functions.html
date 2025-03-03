@@ -13,7 +13,7 @@ let turtle = turtleConsole.addTurtle()
 turtle.lineColor(.cyan)
 turtle.penDown()
 
-// H
+func h() {
 turtle.rotate(80)
 turtle.forward(250)
 turtle.arc(radius: 10, angle: 190)
@@ -23,36 +23,38 @@ turtle.forward(100)
 turtle.arc(radius: 25, angle: -180)
 turtle.forward(75)
 turtle.arc(radius: 25, angle: 155)
+}
 
-// E
+func e() {
 turtle.forward(80)
 turtle.arc(radius: 20, angle: 200)
 turtle.forward(55)
 turtle.arc(radius: 40, angle: 95)
+}
 
-// L
+func l() {
 turtle.arc(radius: 40, angle: 80)
 turtle.forward(210)
 turtle.arc(radius: 10, angle: 190)
 turtle.forward(205)
 turtle.arc(radius: 40, angle: 90)
+}
 
-// L
-turtle.arc(radius: 40, angle: 80)
-turtle.forward(210)
-turtle.arc(radius: 10, angle: 190)
-turtle.forward(205)
-turtle.arc(radius: 40, angle: 90)
-
-// O
+func o() {
 turtle.arc(radius: 40, angle: 75)
 turtle.forward(40)
 turtle.arc(radius: 40, angle: -465)
 turtle.arc(radius: 75, angle: 45)
 turtle.penUp()
+}
+
+h()
+e()
+l()
+l()
+o()
 
 turtle.forward(50)
-
 
 </code></pre>
     <script src="prism.js"></script>
