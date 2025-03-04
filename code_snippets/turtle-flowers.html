@@ -9,9 +9,11 @@
 <body>
     <pre><code class="language-swift">
 
+let turtle = turtleConsole.addTurtle()
+
 // Note: flower may be wonky when run at higher speeds
 // Radius is not exactly the size of the flower -- size also depends on number of petals
-func flower(turtle: TurtleHandle, petals: Int, radius: Double) {
+func flower(petals: Int, radius: Double) {
     let petalSpacing = 360.0 / Double(petals)
     for i in 0..&lt;petals {
         turtle.arc(radius: radius, angle: petalSpacing)
@@ -20,17 +22,16 @@ func flower(turtle: TurtleHandle, petals: Int, radius: Double) {
         turtle.rotate(180)
     }
 }
-let turtle = turtleConsole.addTurtle()
 
 turtle.lineColor(.cyan)
 turtle.penDown()
-flower(turtle: turtle, petals: 5, radius: 100)
+flower(petals: 5, radius: 100)
 
 turtle.penUp()
 
 turtle.forward(200)
 turtle.penDown()
-flower(turtle: turtle, petals: 8, radius: 100)
+flower(petals: 8, radius: 100)
 
 
 
