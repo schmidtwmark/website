@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="BetterBlue iOS app for controlling Hyundai and Kia vehicles">
+  <meta name="author" content="Mark Schmidt">
+  <meta name="theme-color" content="#1e40af">
+  <!-- <link rel="icon" href="../../../../favicon.ico"> -->
+
+  <title>BetterBlue</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Custom styles for this template -->
+  <link href="product.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-light">
+
+  <div id="nav-placeholder"></div>
+
+  <script>
+    $(function () {
+      $("#nav-placeholder").load("nav.html", function () {
+        $("#myNav").css("background-color", "#1e40af");
+      });
+    });
+  </script>
+
+  <div style="max-width: 950px; margin: auto">
+    <div class="text-center">
+      <div class="p-5 mx-auto mt-5">
+        <h1 class="display-4 font-weight-bold">BetterBlue</h1>
+        <p class="lead">A modern iOS app for controlling your Hyundai or Kia vehicle</p>
+      </div>
+
+      <div class="text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="accent-class">🚗 Vehicle Control</h2>
+          <p class="lead">Lock and unlock your vehicle remotely from anywhere. Control climate settings with custom temperature, defrost options, and heated seats. Monitor your vehicle's real-time status including location, fuel/battery levels, and charging status.</p>
+        </div>
+      </div>
+
+      <div class="text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="accent-class">🔋 Multi-Powertrain Support</h2>
+          <p class="lead">Whether you drive an electric vehicle (BEV), gas-powered car, or plug-in hybrid (PHEV), BetterBlue supports all powertrains. Track battery levels and charging status for electric vehicles, fuel levels for gas cars, or monitor both systems in hybrid vehicles.</p>
+        </div>
+      </div>
+
+      <div class="text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="accent-class">📱 iOS Integration</h2>
+          <p class="lead">Built specifically for iOS with full widget support for quick vehicle status on your home screen. Includes a companion Apple Watch app to control your vehicle from your wrist. Integrate with Shortcuts to automate vehicle actions and use Siri voice commands.</p>
+        </div>
+      </div>
+
+      <div class="text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="accent-class">🛠 Developer Features</h2>
+          <p class="lead">Built with modern Swift technologies including SwiftUI for native iOS interface, SwiftData for data persistence, and async/await for modern concurrency. Features HTTP request logging for debugging and a fake vehicle mode for testing without a real vehicle.</p>
+        </div>
+      </div>
+
+      <div class="text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="accent-class">🔒 Privacy & Security</h2>
+          <p class="lead">Your vehicle credentials are stored securely in iCloud using SwiftData encryption. All API communications use HTTPS encryption. Multiple account support allows you to manage vehicles from different Hyundai or Kia accounts.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-5" id="Paragraphs">
+      <h2 class="accent-class text-center">Project Architecture</h2>
+      <p class="">BetterBlue is built as a native iOS app using SwiftUI and modern iOS development practices. The app is structured with a clear separation between the user interface and the vehicle communication logic through BetterBlueKit, a Swift package that handles all API interactions with Hyundai BlueLink and Kia Connect services.</p>
+      
+      <p>The app uses SwiftData as a modern replacement for Core Data, providing seamless iCloud synchronization for user settings and account information. This ensures your preferences and vehicle configurations are available across all your iOS devices.</p>
+      
+      <p>All network communications are implemented using modern Swift concurrency with async/await patterns, providing responsive user interactions while maintaining robust error handling for vehicle communication scenarios.</p>
+      
+      <h3 class="accent-class">Key Components:</h3>
+      <ul>
+        <li><strong>BetterBlue App:</strong> Main iOS app with SwiftUI interface</li>
+        <li><strong>BetterBlueKit:</strong> Swift package for vehicle API communication</li>
+        <li><strong>Apple Watch App:</strong> Companion watchOS app for quick vehicle control</li>
+        <li><strong>iOS Widgets:</strong> Home screen widgets for vehicle status</li>
+        <li><strong>Shortcuts Integration:</strong> Siri and automation support</li>
+      </ul>
+
+      <h2 class="accent-class text-center">Important Notes</h2>
+      <p><strong>Subscription Required:</strong> BetterBlue requires an active BlueLink (Hyundai) or Kia Connect subscription to communicate with your vehicle's remote services.</p>
+      
+      <p><strong>Unofficial App:</strong> This application is not affiliated with, endorsed by, or connected to Hyundai Motor Company or Kia Corporation. It is an independent third-party application.</p>
+      
+      <p><strong>Battery Considerations:</strong> Frequent remote commands may impact your vehicle's 12V auxiliary battery. Use responsibly and be mindful of your vehicle's battery health.</p>
+      
+      <p><strong>Rate Limits:</strong> The app respects API rate limits to prevent account suspension. Please use vehicle commands thoughtfully.</p>
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+  <script>
+    $(function () {
+      $("#footer-placeholder").load("footer.html");
+    });
+  </script>
+
+</body>
+
+</html>
