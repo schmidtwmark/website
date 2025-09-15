@@ -42,52 +42,73 @@
       <div class="p-5 mx-auto mt-5">
         <h1 class="display-4 font-weight-bold">BetterBlue</h1>
         <p class="lead">A modern iOS app for controlling your Hyundai or Kia vehicle</p>
+        <div class="mt-4">
+          <a href="https://testflight.apple.com/join/n7NRXTWb" class="btn btn-primary btn-lg" target="_blank">
+            📱 Install with TestFlight
+          </a>
+        </div>
       </div>
 
       <div class="text-center overflow-hidden">
         <div class="my-3 p-3">
           <h2 class="accent-class">🚗 Vehicle Control</h2>
-          <p class="lead">Lock and unlock your vehicle remotely from anywhere. Control climate settings with custom temperature, defrost options, and heated seats. Monitor your vehicle's real-time status including location, fuel/battery levels, and charging status.</p>
+          <p class="lead">Lock and unlock your vehicle remotely from anywhere. Control climate settings with custom
+            temperature, defrost options, and heated seats. Monitor your vehicle's real-time status including location,
+            fuel/battery levels, and charging status.</p>
         </div>
       </div>
 
       <div class="text-center overflow-hidden">
         <div class="my-3 p-3">
           <h2 class="accent-class">🔋 Multi-Powertrain Support</h2>
-          <p class="lead">Whether you drive an electric vehicle (BEV), gas-powered car, or plug-in hybrid (PHEV), BetterBlue supports all powertrains. Track battery levels and charging status for electric vehicles, fuel levels for gas cars, or monitor both systems in hybrid vehicles.</p>
+          <p class="lead">Whether you drive an electric vehicle (BEV), gas-powered car, or plug-in hybrid (PHEV),
+            BetterBlue supports all powertrains. Track battery levels and charging status for electric vehicles, fuel
+            levels for gas cars, or monitor both systems in hybrid vehicles.</p>
         </div>
       </div>
 
       <div class="text-center overflow-hidden">
         <div class="my-3 p-3">
           <h2 class="accent-class">📱 iOS Integration</h2>
-          <p class="lead">Built specifically for iOS with full widget support for quick vehicle status on your home screen. Includes a companion Apple Watch app to control your vehicle from your wrist. Integrate with Shortcuts to automate vehicle actions and use Siri voice commands.</p>
+          <p class="lead">Built specifically for iOS with full widget support for quick vehicle status on your home
+            screen. Includes a companion Apple Watch app to control your vehicle from your wrist. Integrate with
+            Shortcuts to automate vehicle actions and use Siri voice commands.</p>
         </div>
       </div>
 
       <div class="text-center overflow-hidden">
         <div class="my-3 p-3">
           <h2 class="accent-class">🛠 Developer Features</h2>
-          <p class="lead">Built with modern Swift technologies including SwiftUI for native iOS interface, SwiftData for data persistence, and async/await for modern concurrency. Features HTTP request logging for debugging and a fake vehicle mode for testing without a real vehicle.</p>
+          <p class="lead">Built with modern Swift technologies including SwiftUI for native iOS interface, SwiftData for
+            data persistence, and async/await for modern concurrency. Features HTTP request logging for debugging and a
+            fake vehicle mode for testing without a real vehicle.</p>
         </div>
       </div>
 
       <div class="text-center overflow-hidden">
         <div class="my-3 p-3">
           <h2 class="accent-class">🔒 Privacy & Security</h2>
-          <p class="lead">Your vehicle credentials are stored securely in iCloud using SwiftData encryption. All API communications use HTTPS encryption. Multiple account support allows you to manage vehicles from different Hyundai or Kia accounts.</p>
+          <p class="lead">Your vehicle credentials are stored securely in iCloud using SwiftData encryption. All API
+            communications use HTTPS encryption. Multiple account support allows you to manage vehicles from different
+            Hyundai or Kia accounts.</p>
         </div>
       </div>
     </div>
 
     <div class="px-5" id="Paragraphs">
       <h2 class="accent-class text-center">Project Architecture</h2>
-      <p class="">BetterBlue is built as a native iOS app using SwiftUI and modern iOS development practices. The app is structured with a clear separation between the user interface and the vehicle communication logic through BetterBlueKit, a Swift package that handles all API interactions with Hyundai BlueLink and Kia Connect services.</p>
-      
-      <p>The app uses SwiftData as a modern replacement for Core Data, providing seamless iCloud synchronization for user settings and account information. This ensures your preferences and vehicle configurations are available across all your iOS devices.</p>
-      
-      <p>All network communications are implemented using modern Swift concurrency with async/await patterns, providing responsive user interactions while maintaining robust error handling for vehicle communication scenarios.</p>
-      
+      <p class="">BetterBlue is built as a native iOS app using SwiftUI and modern iOS development practices. The app is
+        structured with a clear separation between the user interface and the vehicle communication logic through
+        BetterBlueKit, a Swift package that handles all API interactions with Hyundai BlueLink and Kia Connect services.
+      </p>
+
+      <p>The app uses SwiftData as a modern replacement for Core Data, providing seamless iCloud synchronization for
+        user settings and account information. This ensures your preferences and vehicle configurations are available
+        across all your iOS devices.</p>
+
+      <p>All network communications are implemented using modern Swift concurrency with async/await patterns, providing
+        responsive user interactions while maintaining robust error handling for vehicle communication scenarios.</p>
+
       <h3 class="accent-class">Key Components:</h3>
       <ul>
         <li><strong>BetterBlue App:</strong> Main iOS app with SwiftUI interface</li>
@@ -98,13 +119,17 @@
       </ul>
 
       <h2 class="accent-class text-center">Important Notes</h2>
-      <p><strong>Subscription Required:</strong> BetterBlue requires an active BlueLink (Hyundai) or Kia Connect subscription to communicate with your vehicle's remote services.</p>
-      
-      <p><strong>Unofficial App:</strong> This application is not affiliated with, endorsed by, or connected to Hyundai Motor Company or Kia Corporation. It is an independent third-party application.</p>
-      
-      <p><strong>Battery Considerations:</strong> Frequent remote commands may impact your vehicle's 12V auxiliary battery. Use responsibly and be mindful of your vehicle's battery health.</p>
-      
-      <p><strong>Rate Limits:</strong> The app respects API rate limits to prevent account suspension. Please use vehicle commands thoughtfully.</p>
+      <p><strong>Subscription Required:</strong> BetterBlue requires an active BlueLink (Hyundai) or Kia Connect
+        subscription to communicate with your vehicle's remote services.</p>
+
+      <p><strong>Unofficial App:</strong> This application is not affiliated with, endorsed by, or connected to Hyundai
+        Motor Company or Kia Corporation. It is an independent third-party application.</p>
+
+      <p><strong>Battery Considerations:</strong> Frequent remote commands may impact your vehicle's 12V auxiliary
+        battery. Use responsibly and be mindful of your vehicle's battery health.</p>
+
+      <p><strong>Rate Limits:</strong> The app respects API rate limits to prevent account suspension. Please use
+        vehicle commands thoughtfully.</p>
     </div>
   </div>
 
