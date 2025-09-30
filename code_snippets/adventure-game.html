@@ -24,19 +24,19 @@ if firstPath == "LEFT" {
     let foodChoice = console.read("Choose OFFER FOOD or DECLINE")
     console.write("") // Visually seperate each choice
 
-  if foodChoice == "OFFER FOOD" {
-      console.write("\"That\"s so kind of you\", the leader says.")
-      console.write("You share your food with the rest of the camp.")
-      console.write("Maybe that wasn't the wisest choice. Lost in the cave with no more food, you wander aimlessly until...")
-      console.write("GAME OVER")
-  } else if foodChoice == "DECLINE" {
-      console.write("\"Sorry\", you say, \"but I barely have enough for myself as it is.\"") 
-      console.write("\"Too bad\", the leader says, \"I was hoping it wouldn\"t come to this.\"")
-      console.write("Suddenly, the leader lunges at you with a knife.")
-      console.write("GAME OVER")
-  } else {
-      console.write("GAME OVER, not a valid choice")
-  }
+    if foodChoice == "OFFER FOOD" {
+        console.write("\"That\"s so kind of you\", the leader says.")
+        console.write("You share your food with the rest of the camp.")
+        console.write("Maybe that wasn't the wisest choice. Lost in the cave with no more food, you wander aimlessly until...")
+        console.write("GAME OVER")
+    } else if foodChoice == "DECLINE" {
+        console.write("\"Sorry\", you say, \"but I barely have enough for myself as it is.\"") 
+        console.write("\"Too bad\", the leader says, \"I was hoping it wouldn\"t come to this.\"")
+        console.write("Suddenly, the leader lunges at you with a knife.")
+        console.write("GAME OVER")
+    } else {
+        console.write("GAME OVER, not a valid choice")
+    }
 
 // If the user selects RIGHT, describe what happens
 } else if firstPath == "RIGHT" { 
@@ -47,23 +47,23 @@ if firstPath == "LEFT" {
     let fightChoice = console.read("Choose STEALTH or ATTACK")
     console.write("") // Empty console.write to separate choices
 
-  if fightChoice == "STEALTH" {
-      console.write("Moving as quietly as you can, you approach the dragon's hoard.")
-      console.write("There are coins and trinkets, jewelry and finery.")
-      console.write("You're awed by a gorgeous painting in a gilded frame.")
-      console.write("So awed, in fact, that you trip over a polished suit of armor, making an enormous racket.")
-      console.write("\"HEY\", the dragon yells. \"THAT'S MY STUFF\"")
-      console.write("You feel a rush of heat and then everything goes dark")
-      console.write("GAME OVER")
-  } else if fightChoice == "ATTACK" {
-      console.write("You draw your shining sword and call out to the dragon.")
-      console.write("\"Woah\", it says. \"I'm just trying to be chill, you can totally take some of this gold if you want. What would I even want with gold anyway? It's not like dragons can participate in the economy. It's kind of messed up, don't you think?\"")
-      console.write("The dragon is right. It is messed up.")
-      console.write("You befriend the dragon, and leave the cave together, realizing the real treasure was friendship with a massive mythical creature.")
-      console.write("YOU WIN")
-  } else {
-      console.write("GAME OVER, not a valid choice")
-  }
+    if fightChoice == "STEALTH" {
+        console.write("Moving as quietly as you can, you approach the dragon's hoard.")
+        console.write("There are coins and trinkets, jewelry and finery.")
+        console.write("You're awed by a gorgeous painting in a gilded frame.")
+        console.write("So awed, in fact, that you trip over a polished suit of armor, making an enormous racket.")
+        console.write("\"HEY\", the dragon yells. \"THAT'S MY STUFF\"")
+        console.write("You feel a rush of heat and then everything goes dark")
+        console.write("GAME OVER")
+    } else if fightChoice == "ATTACK" {
+        console.write("You draw your shining sword and call out to the dragon.")
+        console.write("\"Woah\", it says. \"I'm just trying to be chill, you can totally take some of this gold if you want. What would I even want with gold anyway? It's not like dragons can participate in the economy. It's kind of messed up, don't you think?\"")
+        console.write("The dragon is right. It is messed up.")
+        console.write("You befriend the dragon, and leave the cave together, realizing the real treasure was friendship with a massive mythical creature.")
+        console.write("YOU WIN")
+    } else {
+        console.write("GAME OVER, not a valid choice")
+    }
 } else {
     console.write("GAME OVER, not a valid path")
 }
