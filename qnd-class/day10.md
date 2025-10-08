@@ -2,21 +2,19 @@
 
 <link href="index.css" rel="stylesheet">
 
-Today, we'll start our Wordle project.
+Today, we'll finish Guess My Number and get started on Wordle
 
 See slides [here](../presentation-pdfs/day10.pdf).
 
-Wordle is split into **5 stages**:
+The Guess My Number game is split into four stages:
 
-[Stage 1](../code_snippets/wordle-stage-1.html)
+[Stage 1](../code_snippets/guess-my-number-stage-1.html)
 
-[Stage 2](../code_snippets/wordle-stage-2.html)
+[Stage 2](../code_snippets/guess-my-number-stage-2.html)
 
-[Stage 3](../code_snippets/wordle-stage-3.html)
+[Stage 3](../code_snippets/guess-my-number-stage-3.html)
 
-[Stage 4](../code_snippets/wordle-stage-4.html)
-
-[Stage 5](../code_snippets/wordle-stage-5.html)
+[Stage 4](../code_snippets/guess-my-number-stage-4.html)
 
 
 

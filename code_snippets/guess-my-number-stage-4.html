@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QND CS</title>
+    <link rel="stylesheet" href="prism.css">
+</head>
+
+<body>
+    <pre><code class="language-swift">
+var best = 10000 // Track overall best game 
+
+while true { // Let the user play again
+    
+    let secret = Int.random(in: 0...100) // Get a random number between 1 and 100
+    
+    var guessCount = 0
+    // Wrap guessing + grading in a while loop to repeat until the user guesses correctly
+    while true {
+        let guess = Int(console.read("Guess a number between 1 and 100"))!
+        
+        // Increment guess count
+        guessCount = guessCount + 1
+        
+        if guess == secret {
+            
+            // Update the best variable if they beat the record
+            if guessCount < best {
+                best = guessCount
+            }
+            
+            console.write(ColoredString("You got it! It took \(guessCount) guesses. Your record is \(best) guesses", .green))
+            break // exit when the user guesses correctly
+        } else if guess > secret {
+            console.write(ColoredString("Too high!", .purple))
+        } else {
+            console.write(ColoredString("Too low!", .indigo))
+        }
+        
+        console.write("") // Empty string for spacing
+    }
+    
+    // Check if the user wants to play again
+    console.write("") // add some separation
+    let playAgain = console.read("Play again? Y/N")
+    if playAgain == "N" {
+        break // exit
+    } else {
+        // Put a new line to separate games
+        // After this, program will return to the top of the loop
+        console.write("")
+    }
+    
+}
+
+  </code></pre>
+    <script src="prism.js"></script>
+</body>
+
+</html>
