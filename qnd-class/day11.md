@@ -6,7 +6,7 @@ Today, we'll continue our Wordle project!
 
 See slides [here](../presentation-pdfs/day11.pdf).
 
-Wordle is split into **5 stages**:
+Wordle is split into **6 stages**:
 
 [Stage 1: Guess Grading](../code_snippets/wordle-stage-1.html)
 
@@ -17,6 +17,8 @@ Wordle is split into **5 stages**:
 [Stage 4: Miscellania](../code_snippets/wordle-stage-4.html)
 
 [Stage 5: Play Again](../code_snippets/wordle-stage-5.html)
+
+[Stage 6: Check Words](../code_snippets/wordle-stage-6.html)
 
 
 

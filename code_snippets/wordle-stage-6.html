@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QND CS</title>
+    <link rel="stylesheet" href="prism.css">
+</head>
+
+<body>
+    <pre><code class="language-swift">
+
+import Foundation // Import foundation so we can make a network request!
+// get an array of characters
+let wordBank = ["hello", "world", "front", "chuck", "quiet"]
+
+while true {
+    
+    let secret = Array(wordBank.randomElement()!.lowercased()) // Use lowercased secret word
+    var guessCount = 0
+    
+    while true {
+        var output = ColoredString() // Set up empty colored string
+        
+        // We need the string for checking the dictionary
+        let guessString = console.read("Guess a word:").lowercased()
+        let guess = Array(guessString)
+        
+        if guess.count != secret.count {
+            console.write("Invalid guess")
+            continue // skip back to the top
+        }
+        
+        // Check if it is a real word!
+        let url = URL(string: "https://api.dictionaryapi.dev/api/v2/entries/en/\(guessString)")!
+        let (data, response) = try await URLSession.shared.data(from: url)
+        let httpResponse = response as! HTTPURLResponse
+        if httpResponse.statusCode != 200 {
+            console.write("Not a real word!")
+            continue
+        }
+        
+        guessCount += 1
+        
+        // Check each letter, add to the output string
+        for i in 0..&lt;guess.count {
+            let guessLetter = guess[i]
+            let secretLetter = secret[i]
+            
+            if guessLetter == secretLetter {
+                output += ColoredString(String(guessLetter), .green)
+            } else if secret.contains(guessLetter) {
+                output += ColoredString(String(guessLetter), .yellow)
+                
+            } else {
+                output += ColoredString(String(guessLetter), .gray)
+            }
+        }
+        console.write(output)
+        
+        if guess == secret {
+            console.write(ColoredString("You got it!", .green))
+            break // exit the loop
+        }
+        
+        if guessCount &gt;= 6 {
+            console.write(ColoredString("Out of guesses, the answer was \(String(secret))", .red))
+            break
+        }
+    }
+    
+    let answer = console.read("Play again? Yes / No")
+    if answer != "Yes" {
+        console.write("Thanks for playing!")
+        break
+    }
+    console.write("") // Empty line to separate games
+}
+
+
+</code></pre>
+    <script src="prism.js"></script>
+</body>
+
+</html>
