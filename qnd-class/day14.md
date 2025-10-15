@@ -6,4 +6,4 @@ Today we'll finish our final project!
 
 See slides [here](../presentation-pdfs/day14.pdf).
 
-[Submit your code here!](https://docs.google.com/forms/d/1L0xTbJwvZuxkxAXwSnCRC1DgQDSyYY6u0DOhqVXWhVY/edit)
+[Submit your code here!](https://forms.gle/beCY43NV6XzDfqKV9)
