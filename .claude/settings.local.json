@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git:*)",
+      "Bash(wc -l /Users/Shared/website/presentation-pdfs/*.pdf)",
+      "Bash(ln -s qnd/output/presentations-pdfs presentation-pdfs)",
+      "Bash(ln:*)"
+    ]
+  }
+}
