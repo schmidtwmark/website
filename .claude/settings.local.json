@@ -4,7 +4,9 @@
       "Bash(git:*)",
       "Bash(wc -l /Users/Shared/website/presentation-pdfs/*.pdf)",
       "Bash(ln -s qnd/output/presentations-pdfs presentation-pdfs)",
-      "Bash(ln:*)"
+      "Bash(ln:*)",
+      "Bash(rm /Users/Shared/website/presentation-pdfs)",
+      "Bash(cp -r /Users/Shared/website/qnd/output/presentations-pdfs /Users/Shared/website/presentation-pdfs)"
     ]
   }
 }
