@@ -2,6 +2,6 @@
 
 <link href="index.css" rel="stylesheet">
 
-Today, we'll add some more tools to our toolbox.
+Today, we'll introduce console input and output, and making interactive programs!
 
 You can find today's presentation at [day2.pdf](../presentation-pdfs/day2.pdf).
