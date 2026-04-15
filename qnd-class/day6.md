@@ -2,7 +2,7 @@
 
 <link href="index.css" rel="stylesheet">
 
-We're continuing the adventure game today!
+We're finishing the adventure game today!
 
 You can find today's presentation [here](../presentation-pdfs/day6.pdf).
 
