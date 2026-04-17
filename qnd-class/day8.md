@@ -1,10 +1,10 @@
-# Computer Science Day 9
+# Computer Science Day 8
 
 <link href="index.css" rel="stylesheet">
 
 Today, we'll create a Guess My Number game and learn about loops
 
-See slides [here](../presentation-pdfs/day9.pdf).
+See slides [here](../presentation-pdfs/day8.pdf).
 
 The Guess My Number game is split into three stages:
 
