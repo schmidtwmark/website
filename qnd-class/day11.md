@@ -1,10 +1,10 @@
-# Computer Science Day 12
+# Computer Science Day 11
 
 <link href="index.css" rel="stylesheet">
 
-Today, we'll start our final project!
+Today, we'll start our turtle project!
 
-See slides [here](../presentation-pdfs/day12.pdf).
+See slides [here](../presentation-pdfs/day11.pdf).
 
 Here's some sample code:
 
