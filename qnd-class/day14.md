@@ -2,8 +2,10 @@
 
 <link href="index.css" rel="stylesheet">
 
-Today we'll finish our turtle project!
+Today we'll start our final project and explore coding agents!
 
 See slides [here](../presentation-pdfs/day13.pdf).
 
-[Submit your code here!](https://forms.gle/eQUcQWpPNyLa63YY9)
+Access AI Studio [here](https://aistudio.google.com).
+
+
