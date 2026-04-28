@@ -2,10 +2,10 @@
 
 <link href="index.css" rel="stylesheet">
 
-Today we're taking a brief look at iOS app development! 
-
-If you haven't submitted your Turtle project, please do so [here!](https://forms.gle/beCY43NV6XzDfqKV9)
+Today we're continuing our final project and learning about LLMs!
 
 See slides [here](../presentation-pdfs/day15.pdf).
 
-Get the client code for our app [here](../code_snippets/client.swift)
+Check out my LLM demo [here](https://llm-lab-727023009697.us-east1.run.app)
+
+Access AI Studio [here](https://aistudio.google.com).
