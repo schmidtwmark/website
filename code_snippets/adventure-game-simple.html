@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QND CS</title>
+    <link rel="stylesheet" href="prism.css">
+</head>
+
+<body>
+    <pre><code class="language-swift">
+console.write("Introduction")
+let firstChoice = console.read("Choose LEFT or RIGHT")
+
+if firstChoice == "LEFT" {
+    console.write("Encounter adventurers")
+    let foodChoice = console.read("Choose OFFER FOOD or DECLINE")
+
+    if foodChoice == "OFFER FOOD" {
+        console.write("Starve, GAME OVER")
+    } else if foodChoice == "DECLINE" {
+        console.write("Stabbed, GAME OVER")
+    } else {
+        console.write("GAME OVER, not a valid choice")
+    }
+} else if firstChoice == "RIGHT" {
+    console.write("See a dragon / treasure")
+    let fightChoice = console.read("Choose STEALTH or ATTACK")
+
+    if fightChoice == "STEALTH" {
+        console.write("Burnt, GAME OVER")
+    } else if fightChoice == "ATTACK" {
+        console.write("Make friend, YOU WIN")
+    } else {
+        console.write("GAME OVER, not a valid choice")
+    }
+} else {
+    console.write("GAME OVER, not a valid path")
+}
+  </code></pre>
+    <script src="prism.js"></script>
+</body>
+
+</html>
