@@ -8,4 +8,4 @@ You can find today's presentation [here](../presentation-pdfs/day4.pdf).
 
 See my example project [here](../code_snippets/adventure-game.html).
 
-See the simple version [here](../code_snippets/adventure_game-simple.html).
+See the simple version [here](../code_snippets/adventure-game-simple.html).
