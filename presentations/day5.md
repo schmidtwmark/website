@@ -46,6 +46,15 @@ Mr. Schmidt
 
 --- 
 
+# Full Example
+
+- Escaping quotes with `\"`
+- Nested Ifs
+- `console.write("")` for empty space
+- Comments
+
+---
+
 # Flowchart
 
 ![bg w:90%](../assets/flowchart.png)
