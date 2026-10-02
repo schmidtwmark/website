@@ -2,15 +2,6 @@
 
 <link href="index.css" rel="stylesheet">
 
-Today, we'll create a Guess My Number game and learn about loops
+Today we're continuing learning about loops with our robots
 
-See slides [here](../presentation-pdfs/day8.pdf).
-
-The Guess My Number game is split into three stages:
-
-[Stage 1](../code_snippets/guess-my-number-stage-1.html)
-
-[Stage 2](../code_snippets/guess-my-number-stage-2.html)
-
-[Stage 3](../code_snippets/guess-my-number-stage-3.html)
-
+You can find today's presentation [here](../presentation-pdfs/day7.pdf).

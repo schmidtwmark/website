@@ -2,6 +2,6 @@
 
 <link href="index.css" rel="stylesheet">
 
-Today we're making a calculator and learning about how computers do math
+Today we're continuing learning about loops with our robots
 
 You can find today's presentation [here](../presentation-pdfs/day7.pdf).
