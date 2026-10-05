@@ -2,23 +2,8 @@
 
 <link href="index.css" rel="stylesheet">
 
-Today, we'll start our Wordle project!
+Today we're going bug hunting. We'll work through a book of code errors, fix them, and get the code running.
 
 See slides [here](../presentation-pdfs/day9.pdf).
 
-Wordle is split into **6 stages**:
-
-[Stage 1: Guess Grading](../code_snippets/wordle-stage-1.html)
-
-[Stage 2: Looping](../code_snippets/wordle-stage-2.html)
-
-[Stage 3: Guess Count Limit + Word Bank](../code_snippets/wordle-stage-3.html)
-
-[Stage 4: Miscellania](../code_snippets/wordle-stage-4.html)
-
-[Stage 5: Play Again](../code_snippets/wordle-stage-5.html)
-
-[Stage 6: Check Words](../code_snippets/wordle-stage-6.html)
-
-
-
+Download the Bug Hunt playground [here](../playgroundbooks/bughunt/bughunt.playgroundbook.zip).
