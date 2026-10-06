@@ -9,58 +9,38 @@ Mr. Schmidt
 
 --- 
 
-# Recap
+# Today
 
-- Wordle
+- Turtles
 
 --- 
-# Stage 1: Grade a Guess
 
-- Turn a string into an Array
-- Get a guess from the user
+# Project
 
----
-
-# Stage 2: Looping and Validation
-
-- Put the guess part in a loop
-- Check if the guess is the right length
-  - Use `continue`
-- Check if the guess is correct!
----
-
-
-# Stage 3: Guess Count Limit
-- Track the number of guesses
-- If guesses >= 6, tell the user they lost
-- Random word from a word bank!
+- Make some art!
+  - Whatever you want!
+  - **Keep it appropriate!**
+  - Think Etch a Sketch, not Mona Lisa
+  - Make it unique
+    - Do not just copy my code
 
 ---
 
-# Stage 4: Miscellania
+# Turtles!
 
-- Use ColoredString instead of emoji
-- Always compare in the same letter casing
+- Create a turtle
+- Lots of ways to move it around!
 
----
-
-# Stage 5: Play again?
-
-- Wrap it all in a loop
-- When the inner loop exits, ask if they want to play again. Otherwise, break
-
----
-
-# (bonus) Stage 6: Check Real Words 
-
-- `import Foundation`
-- Make a URL request to dictionaryapi.dev
-- Check the response
+```swift
+let turtle = turtleConsole.addTurtle() 
+turtle.penDown() // start drawing
+turtle.forward(100) // move turtle 100 units forward
+turtle.penUp() // stop drawing
+```
 
 ---
 
-# What's Next?
+# Turtles (continued)
 
-- Turtle!
-- You'll have the rest of the week to make your piece
-- Start thinking about what you want to make
+- Check the README for details on other Turtle functions
+- lineColor, fill, arcs, thickness
