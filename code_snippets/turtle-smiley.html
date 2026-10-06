@@ -11,31 +11,31 @@
 let turtle = turtleConsole.addTurtle()
 turtle.penDown(fillColor: .green)
 // draw a full circle
-turtle.arc(radius: 200, angle: 360)
+turtle.arcLeft(radius: 200, angle: 360)
 turtle.penUp()
-turtle.rotate(90)
+turtle.rotateLeft(90)
 
 
 turtle.forward(300)
-turtle.rotate(90)
+turtle.rotateLeft(90)
 turtle.forward(100)
 
 turtle.penDown(fillColor: .black)
-turtle.arc(radius:30, angle:360)
+turtle.arcLeft(radius:30, angle:360)
 turtle.penUp()
 
-turtle.rotate(180)
+turtle.rotateLeft(180)
 turtle.forward(200)
 
 turtle.penDown(fillColor: .black)
-turtle.arc(radius:30, angle: -360)
+turtle.arcRight(radius:30, angle: 360)
 turtle.penUp()
 
-turtle.rotate(-90)
+turtle.rotateRight(90)
 turtle.forward(100)
 
 turtle.penDown(fillColor: .black)
-turtle.arc(radius: 100, angle: -180)
+turtle.arcRight(radius: 100, angle: 180)
 
 </code></pre>
     <script src="prism.js"></script>
