@@ -23,6 +23,7 @@ Mr. Schmidt
   - Think Etch a Sketch, not Mona Lisa
   - Make it unique
     - Do not just copy my code
+  - It *must* include a loop!
 
 ---
 
@@ -30,6 +31,7 @@ Mr. Schmidt
 
 - Create a turtle
 - Lots of ways to move it around!
+- Use `penUp()`/`penDown()` to control whether it is drawing
 
 ```swift
 let turtle = turtleConsole.addTurtle() 
