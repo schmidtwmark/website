@@ -2,23 +2,14 @@
 
 <link href="index.css" rel="stylesheet">
 
-Today, we'll finish our Wordle project!
+Today we'll start our turtle project!
 
 See slides [here](../presentation-pdfs/day10.pdf).
 
-Wordle is split into **6 stages**:
+Download the Turtle playground [here](../playgroundbooks/turtle/turtle.playgroundbook.zip).
 
-[Stage 1: Guess Grading](../code_snippets/wordle-stage-1.html)
+Here's some sample code:
 
-[Stage 2: Looping](../code_snippets/wordle-stage-2.html)
+[Drawing a smiley face](../code_snippets/turtle-smiley.html)
 
-[Stage 3: Guess Count Limit + Word Bank](../code_snippets/wordle-stage-3.html)
-
-[Stage 4: Miscellania](../code_snippets/wordle-stage-4.html)
-
-[Stage 5: Play Again](../code_snippets/wordle-stage-5.html)
-
-[Stage 6: Check Words](../code_snippets/wordle-stage-6.html)
-
-
-
+[Drawing HELLO in cursive](../code_snippets/turtle-hello.html)
