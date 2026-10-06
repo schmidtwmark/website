@@ -1,0 +1,5 @@
+.DS_Store
+bazel-*
+output
+reminders.json
+reminders_by_user.json
