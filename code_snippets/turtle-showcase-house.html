@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QND CS</title>
+    <link rel="stylesheet" href="prism.css">
+</head>
+
+<body>
+    <pre><code class="language-swift">
+// Student example from fall 2025: a house on a sunny day
+let turtle = turtleConsole.addTurtle()
+
+turtle.lineColor(.black)
+
+//Sky
+turtle.penDown(fillColor: .hex("#87CEEB"))
+turtle.forward(600)
+turtle.rotateLeft(90)
+turtle.forward(500)
+turtle.rotateLeft(90)
+turtle.forward(600)
+turtle.rotateLeft(90)
+turtle.forward(500)
+turtle.rotateLeft(90)
+// turtle.penUp  (this line did nothing: it was missing its ())
+
+//Grass
+turtle.penDown(fillColor: .hex("#228B22"))
+turtle.forward(600)
+turtle.rotateLeft(90)
+turtle.forward(100)
+turtle.rotateLeft(90)
+turtle.forward(600)
+turtle.rotateLeft(90)
+turtle.forward(100)
+turtle.penUp()
+turtle.rotateLeft(90)
+turtle.forward(180)
+turtle.rotateLeft(90)
+turtle.forward(100)
+turtle.rotateRight(90)
+
+//Basic house shape
+turtle.penDown(fillColor: .yellow)
+turtle.forward(250)
+turtle.rotateLeft(90)
+turtle.forward(250)
+turtle.rotateLeft(90)
+turtle.forward(250)
+turtle.rotateLeft(90)
+turtle.forward(250)
+turtle.penUp()
+
+//Door
+turtle.rotateLeft(90)
+turtle.forward(165)
+turtle.penDown(fillColor: .brown)
+turtle.rotateLeft(90)
+turtle.forward(125)
+turtle.rotateLeft(90)
+turtle.forward(70)
+turtle.rotateLeft(90)
+turtle.forward(125)
+turtle.penUp()
+turtle.rotateLeft(90)
+turtle.forward(60)
+turtle.rotateLeft(90)
+turtle.forward(70)
+turtle.penDown(fillColor: .gray)
+turtle.arcLeft(radius: 5, angle: 360)
+turtle.penUp()
+turtle.forward(180)
+
+//Roof
+turtle.rotateRight(90)
+turtle.forward(100)
+turtle.rotateLeft(135)
+turtle.penDown(fillColor: .red)
+turtle.forward(180)
+turtle.rotateLeft(90)
+turtle.forward(180)
+turtle.penUp()
+
+//Window (left)
+turtle.rotateLeft(45)
+turtle.forward(150)
+turtle.rotateLeft(90)
+turtle.penUp()
+turtle.forward(70)
+turtle.penDown(fillColor: .hex("#89CFF0"))
+turtle.rotateLeft(90)
+turtle.forward(40)
+turtle.rotateLeft(90)
+turtle.forward(40)
+turtle.rotateLeft(90)
+turtle.forward(40)
+turtle.rotateLeft(90)
+turtle.forward(40)
+turtle.penUp()
+
+//Window (right)
+turtle.forward(160)
+turtle.penDown(fillColor: .hex("#89CFF0"))
+turtle.rotateLeft(90)
+turtle.forward(40)
+turtle.rotateLeft(90)
+turtle.forward(40)
+turtle.rotateLeft(90)
+turtle.forward(40)
+turtle.rotateLeft(90)
+turtle.forward(40)
+turtle.penUp()
+
+//Chimney
+turtle.rotateLeft(90)
+turtle.forward(176)
+turtle.penDown(fillColor: .hex("#8B0000"))
+turtle.forward(100)
+turtle.rotateLeft(90)
+turtle.forward(60)
+turtle.rotateLeft(90)
+turtle.forward(40)
+turtle.penUp()
+turtle.forward(370)
+</code></pre>
+    <script src="prism.js"></script>
+</body>
+
+</html>
