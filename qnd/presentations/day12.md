@@ -44,5 +44,4 @@ turtle.lineColor(.rgb(245, 66, 66)) // red, green, blue from 0 to 255
   - Take what you've learned from making your first piece and make another!
 - Make something unique -- **don't just copy my examples**
 - Keep it appropriate
-
-
+- It *must* include a loop!
