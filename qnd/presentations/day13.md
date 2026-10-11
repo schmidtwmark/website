@@ -11,50 +11,59 @@ Mr. Schmidt
 
 # Today
 
-- Finish the turtle project!
-
-
----
-
-# Custom Colors
-
-- How does a computer store colors?
-- RGB Values
-- Hex Codes
+- Game Design!
+  - Build a platformer, one idea at a time
+- Download the Game Design playground from [markschmidt.io/qnd](https://markschmidt.io/qnd)
 
 ---
 
-# Custom Colors in Swift
+# Demo
 
-- Use Google Color Picker to find a color
-- Create a new color using `.hex` or `.rgb`
-
-```swift
-turtle.lineColor(.hex("daf542"))
-turtle.lineColor(.hex("#daf542")) // With or without # is fine
-turtle.lineColor(.rgb(245, 66, 66)) // red, green, blue from 0 to 255
-```
+- What you'll be building
 
 ---
 
-# Ovals
+# What is a Game Engine?
 
-Just like arcs, but with two radii instead of one!
-
-The xRadius is parallel to the turtle's heading, yRadius is perpendicular to the turtle's heading.
-
-```swift
-turtle.ovalLeft(xRadius: 100, yRadius: 50, angle: 360)
-```
+- Draws the game 60 times a second
+  - Each picture is a **frame**
+- Moves things, stops them at blocks, follows you with the camera
+- You write **functions**, the engine calls them for you
 
 ---
 
-# Turtle Project Requirements
+# Start and Update Functions
 
-- Put in a solid effort for the rest of the week
-  - Stay on task and add more to your art
-  - Take what you've learned from making your first piece and make another!
-- Make something unique -- **don't just copy my examples**
+- **Start** functions run when the level starts
+  - `func startPlayer(player: Player)`
+- **Update** functions run every frame, 60 times a second
+  - `func updatePlayer(player: Player)`
+- Never call them yourself
+- Never put `while` in them -- the engine is already looping. Use `if`!
 
+---
 
+# The One Rule
 
+- Every frame, each thing moves by its `speedX` and `speedY`
+  - Positive is right / up
+- Your functions only change **speeds**
+- Blocks stop things
+
+---
+
+# How the Book Works
+
+- The checklist above the game turns ✅ when your code works
+- A 👉 comment shows where your code goes
+- Work at your own pace -- today *and* tomorrow
+- Each Part ends with a **Hints** page
+- Stuck? The next page starts with the finished code
+
+---
+
+# Controls
+
+- Tap the game once, then use the arrow keys
+- Or hold the ◀︎ ▶︎ ▲ buttons under the game
+- The first Run takes a little while -- only tap Run once!
