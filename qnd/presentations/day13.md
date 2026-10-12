@@ -53,6 +53,7 @@ Mr. Schmidt
 
 - The checklist above the game turns ✅ when your code works
 - A 👉 comment shows where your code goes
+  - Sometimes, there are multiple 👉 comments
 - Work at your own pace -- today *and* tomorrow
 - Each Part ends with a **Hints** page
 - Stuck? The next page starts with the finished code
@@ -63,4 +64,17 @@ Mr. Schmidt
 
 - Tap the game once, then use the arrow keys
 - Or hold the ◀︎ ▶︎ ▲ buttons under the game
-- The first Run takes a little while -- only tap Run once!
+- The first Run Code takes a little while -- only tap Run Code once!
+
+---
+
+# Affordances
+
+- Human reaction time is pretty slow (250 milliseconds!)
+- Games lie to you to make you feel better
+- Coyote Time, Jump Buffers, Position Nudgings
+
+![bg right w:600](../assets/celeste.gif)
+
+
+---
