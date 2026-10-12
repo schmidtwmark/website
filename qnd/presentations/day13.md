@@ -27,7 +27,7 @@ Mr. Schmidt
 
 - Draws the game 60 times a second
   - Each picture is a **frame**
-- Moves things, stops them at blocks, follows you with the camera
+- Moves things, performs collision calculations, follows you with the camera
 - You write **functions**, the engine calls them for you
 
 ---
@@ -39,7 +39,6 @@ Mr. Schmidt
 - **Update** functions run every frame, 60 times a second
   - `func updatePlayer(player: Player)`
 - Never call them yourself
-- Never put `while` in them -- the engine is already looping. Use `if`!
 
 ---
 
@@ -47,8 +46,6 @@ Mr. Schmidt
 
 - Every frame, each thing moves by its `speedX` and `speedY`
   - Positive is right / up
-- Your functions only change **speeds**
-- Blocks stop things
 
 ---
 
