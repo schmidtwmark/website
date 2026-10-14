@@ -11,24 +11,22 @@ Mr. Schmidt
 
 # Today
 
-- LLMs
-- Sharing and Publishing your projects!
+- AI and Large Language Models
+- AI Coding / Vibecoding
 - Final Project
 
 ---
 
-# LLMs
+# What AI tools have you used?
 
-- Large Language Models
-- When marketers say AI, they popularly mean LLMs
 
 ---
 
-# Attention is All You Need
+#  AI 
 
-- Paper published by Google researchers in 2017
-- Introduced the Transformer architecture that underlies modern LLMs
-- Kicked off modern AI boom
+- AI is not your friend
+- AI is not alive
+- It is a tool
 
 ---
 
@@ -41,53 +39,25 @@ Mr. Schmidt
 
 ---
 
-# Prompting
+# AI Coding
 
-- Start with a system prompt
-- Anthropic publishes system prompts for Claude [here](https://platform.claude.com/docs/en/release-notes/system-prompts)
-- AI Studio system prompt is [here](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/blob/main/Google/Gemini/AI%20Studio%20vibe-coder.txt)
-- Your text prompt gets added to the end of the system prompt, and then the model generates a response
+- Claude Code changed the game
+- I manually write very little code
 
 ---
 
-# System Prompts are weird
+# Why bother learning to code at all?
 
-![bg right w:650](../assets/codex-system-prompt.webp)
-
-- One of the only levers to control what a model outputs
-
----
-
-
-# LLMs Do Not Think!!
-
-- My pet peeve
-- LLMs predict the next word based on their training
-- "Thinking" is just words they hide from the user by default!
-
-![bg right w:600](../assets/llm_thinking.png)
-
+- Virtue in learning
+- Knowing the limits
+- The people do not want slop!
 
 ---
 
-# LLM Demo!
+# Your First AI Studio Project
 
-- Using AI Studio!
-- Check out my demo [here](https://llm-lab-727023009697.us-east1.run.app)
+- Rebuild the Platformer Game
 
-
----
-
-# Sharing and Publishing
-
-- Use the "Share" button in AI Studio to get a link
-  - Limit to certain people or make it public
-  - Runs within AI Studio
-- To make it a standalone web app, click "Publish"
-  - You get a URL that you can share with anyone and it will run without needing to log in to AI Studio
-  - Requires a Google Cloud account and billing
-  - $300 in free credits for new users goes a long way!
-- Can add a link to your iPad / iPhone home screen for easy access!
 ---
 
 # Final Project Requirements
@@ -97,6 +67,7 @@ Mr. Schmidt
 - Be creative and have fun!
 - The focus is *building something* not *playing something*
   - You'll have to use your app to iterate, but you should be adding features and improving it, not just playing a game
+- On Friday, I'll show either your AI Studio app *or* your turtle project
 
 ---
 
@@ -109,6 +80,20 @@ Mr. Schmidt
 - Make a website for a school club or sports team
 
 - Try the "I'm feeling lucky" button and see what you get!
+
+---
+
+
+# Sharing and Publishing
+
+- Use the "Share" button in AI Studio to get a link
+  - Limit to certain people or make it public
+  - Runs within AI Studio
+- To make it a standalone web app, click "Publish"
+  - You get a URL that you can share with anyone and it will run without needing to log in to AI Studio
+  - Requires a Google Cloud account and billing
+  - $300 in free credits for new users goes a long way!
+- Can add a link to your iPad / iPhone home screen for easy access!
 
 ---
 
