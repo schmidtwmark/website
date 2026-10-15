@@ -18,8 +18,7 @@ Mr. Schmidt
 # Expectations
 
 - Let's make good use of time today
-- Polish your project, or use what you've learned to make something new!
-- Submit your code at the end of class
+- Build your project in AI studio
 
 ---
 
@@ -32,10 +31,32 @@ Mr. Schmidt
 
 ---
 
+# Final Project Requirements
+
+- Make something cool with AI Studio
+- Keep it appropriate
+- Be creative and have fun!
+- The focus is *building something* not *playing something*
+  - You'll have to use your app to iterate, but you should be adding features and improving it, not just playing a game
+- On Friday, I'll show either your AI Studio app *or* your turtle project
+
+---
+
+# Final Project Ideas
+
+- Take your Adventure game and make a visual novel version
+- Make a personal dashboard to track homework assignments, todos, events, etc.
+- Build a quiz app about a topic you love 
+- Make a journaling app
+- Make a website for a school club or sports team
+
+- Try the "I'm feeling lucky" button and see what you get!
+
+---
+
 # Project Submission
 
 - Use the Share button
 - Make sure to make it publicly viewable!
 
 ![bg right w:400px](../assets/share-ai-studio.png)
-
