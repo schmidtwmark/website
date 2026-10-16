@@ -34,6 +34,7 @@ Mr. Schmidt
 # Final Project Requirements
 
 - Make something cool with AI Studio
+  - It cannot just be the Swift Playground game
 - Keep it appropriate
 - Be creative and have fun!
 - The focus is *building something* not *playing something*

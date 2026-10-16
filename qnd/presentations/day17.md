@@ -29,11 +29,13 @@ Mr. Schmidt
 - Reading / Writing to console
 - Variables
 - Strings
-- Integers
-- Math
+- Adventure Game
+- Robots
 - `if` / `else if` / `else`
 - `while` and `for` loops
+- Bug Hunting
 - Turtles!
+- Game Design
 - AI Studio!
 
 
@@ -88,4 +90,3 @@ Mr. Schmidt
 ---
 
 # Show and Tell!
-
